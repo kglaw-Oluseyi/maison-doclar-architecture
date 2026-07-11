@@ -42,3 +42,13 @@ Format: Situation · Decision · Reasoning · Alternatives considered · Status.
 **DI-020 · Register/Intelligence separation & precedence.** The Decision Register is the immutable append-only legal record; Decision Intelligence derived views live in `/decisions/derived` and evolve freely. Conflicting-statement precedence: Constitution → Governance → Current Knowledge → Architecture Standards → Historical Deliverables. Status: ratified and executed.
 
 **DI-021 · Knowledge Extraction Workspace.** `maison-doclar-knowledge-extraction` created as a private staging repository (/raw /extracted /review /promoted /scripts) separating ETL-style extraction from constitutional governance. Promotion into the constitutional repository is an explicit governed action. Raw evidence is committed as excerpts with path+commit provenance, never as full clones, and never containing guest PII. Status: approved and executed.
+
+**DI-022 · Constitutional schema frozen at v1.0.** The manifest and front-matter schema are frozen; schema changes are constitutional changes requiring register entries. Status: ratified and executed.
+
+**DI-023 · Stable identifiers.** Permanent artifact IDs (MPS-/MXS-/MKC-/CAP-/CON-/GOV-/KNW-/STD-/ARCH-/DI- prefixes) replace filename-primary referencing. Advisory responses and cross-references cite IDs. Status: ratified and executed.
+
+**DI-024 · Promotion exit criteria.** Extraction pipeline stages carry explicit exit criteria (raw: provenance verified · extracted: normalized + source-linked · review: reviewer disposition recorded · promoted: constitutional artifact + register entry). Promotion is reproducible, not judgment-based. Status: ratified; executed in the extraction workspace.
+
+**DI-025 · Advisory envelope is a versioned protocol.** Additive = minor; removal/rename = major; consumers declare supported versions. Status: ratified and executed (CON-001 v1.2).
+
+**DI-026 · Assumption registry.** Decisions reference assumptions by ID; lifecycles tracked in GOV-004 and analysed in derived intelligence. Seeded A-001–A-007. Status: ratified and executed.

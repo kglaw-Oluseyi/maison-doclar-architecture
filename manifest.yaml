@@ -1,16 +1,20 @@
 # Constitutional manifest — machine-discoverable index of constitutional artifacts.
+# SCHEMA: v1.0 — FROZEN (DI-022). Changes to this schema or to artifact front-matter fields are
+# constitutional changes requiring a Decision Register entry.
+# IDENTIFIERS (DI-023): artifacts carry permanent stable IDs; file paths may change, IDs never do.
+#   Prefixes: MPS- MXS- MKC- CAP- STD- ARCH- GOV- CON- KNW- DI-
 # Precedence order for conflicting statements (DI-020):
 #   1. /constitution  2. /governance  3. /knowledge (current)  4. /architecture/standards  5. /architecture/deliverables (historical)
 artifacts:
-  - {id: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
-  - {id: MXS,                 path: constitution/MXS/README.md,             version: "0.1", status: Draft}
-  - {id: MKC,                 path: constitution/MKC/README.md,             version: "0.1", status: Ratified-outline}
-  - {id: CAP-CATALOGUE,       path: capabilities/catalogue.md,              version: "1.0", status: Ratified}
-  - {id: ADVISORY-CONTRACT,   path: contracts/advisory-contract.md,         version: "1.1", status: Ratified}
-  - {id: AI-GOVERNANCE,       path: governance/ai-governance.md,            version: "0.1", status: Ratified-in-principle}
-  - {id: REPO-CLASSIFICATIONS,path: governance/repository-classifications.md, version: "1.1", status: Ratified}
-  - {id: DECISION-REGISTER,   path: decisions/decision-register.md,         version: append-only, status: Immutable-legal-record}
-  - {id: PRESERVATION-MATRIX, path: knowledge/preservation-matrix.md,       version: "1.1", status: Ratified-evidentiary-baseline}
-  - {id: NEGATIVE-KNOWLEDGE,  path: knowledge/negative-knowledge.md,        version: living, status: Ratified}
-  - {id: FOSSILS,             path: knowledge/fossils.md,                   version: living, status: Ratified}
-  - {id: HUMAN-KNOWLEDGE,     path: knowledge/human-knowledge-assets.md,    version: living, status: Ratified}
+  - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
+  - {id: MXS-001, name: MXS,                 path: constitution/MXS/README.md,             version: "0.1", status: Draft}
+  - {id: MKC-001, name: MKC,                 path: constitution/MKC/README.md,             version: "0.1", status: Ratified-outline}
+  - {id: CAP-001, name: CAP-CATALOGUE,       path: capabilities/catalogue.md,              version: "1.0", status: Ratified}
+  - {id: CON-001, name: ADVISORY-CONTRACT,   path: contracts/advisory-contract.md,         version: "1.1", status: Ratified}
+  - {id: GOV-001, name: AI-GOVERNANCE,       path: governance/ai-governance.md,            version: "0.1", status: Ratified-in-principle}
+  - {id: GOV-002, name: REPO-CLASSIFICATIONS,path: governance/repository-classifications.md, version: "1.1", status: Ratified}
+  - {id: GOV-003, name: DECISION-REGISTER,   path: decisions/decision-register.md,         version: append-only, status: Immutable-legal-record}
+  - {id: KNW-001, name: PRESERVATION-MATRIX, path: knowledge/preservation-matrix.md,       version: "1.1", status: Ratified-evidentiary-baseline}
+  - {id: KNW-002, name: NEGATIVE-KNOWLEDGE,  path: knowledge/negative-knowledge.md,        version: living, status: Ratified}
+  - {id: KNW-003, name: FOSSILS,             path: knowledge/fossils.md,                   version: living, status: Ratified}
+  - {id: KNW-004, name: HUMAN-KNOWLEDGE,     path: knowledge/human-knowledge-assets.md,    version: living, status: Ratified}
