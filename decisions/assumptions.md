@@ -17,3 +17,4 @@ Many reversals happen because assumptions changed, not because decisions were un
 | A-005 | Anthropic remains the primary AI provider across the estate. | DI-006 | Active |
 | A-006 | Multi-tenancy will eventually be required (year-5 SaaS option). | Deliverable 02 §14 | Active |
 | A-007 | The Alakija event (23 Jul 2026) proceeds on the current Signature stack. | DI-018 | Active |
+| A-008 | No enterprise SSO/federation requirement will materialise within 24 months. | Deliverable 07 §2 (C17 proposal) | Active — if expired, build-vs-buy reopens |

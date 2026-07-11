@@ -11,6 +11,7 @@ This directory is the immutable record of the Strategic Architecture Program's d
 | 05 | Platform & Company Architecture | Option C ratified (DI-012, DI-014, DI-015) |
 | 06A (+v1.1 addendum) | Knowledge Preservation Matrix | Ratified as evidentiary baseline (DI-013) |
 | 06B | Repository Strategy | Approved (DI-013, DI-016–DI-018) |
+| 07 | Shared Infrastructure, Identity, AI Governance, Media & Messaging Realization | **Draft — under ICAA/principal review** |
 
 **As-delivered vs living:** files here are snapshots of what was reviewed and ratified; they are not edited after acceptance. The *living* versions of content that continues to evolve are:
 - Preservation Matrix → `/knowledge/preservation-matrix.md` (+ addendum)
