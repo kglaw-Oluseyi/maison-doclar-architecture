@@ -1,7 +1,7 @@
 ---
 artifact_id: STD-001
-version: "1.0-draft"
-status: Draft — blocked on BLOCKER-S1 (frozen formulation promotion) and CTR-S1/S2 rulings
+version: "1.0"
+status: Ratified — BLOCKER-S1 cleared and CTR-S1/S2 ratified (DI-034)
 effective_date: 2026-07-11
 depends_on: [MPS-001, MKC-001, CON-001, CAP-001]
 decision_refs: [DI-030]
@@ -22,8 +22,8 @@ Speculative assignments with versioning (stage-before-commit) · canvas design p
 ## 4. Rejected / not carried forward
 Two divergent suggestion keys (importKey vs internal id) — Platform uses one event-scoped guest identity per C2. In-process-only allocation (Aperture) — replaced by the producer contract (I-9). Numeric-weight UI exposure — priority ordering remains the interface.
 
-## 5. Canonical formulation & algorithm (normative by reference — BLOCKED)
-The frozen Mathematical Formulation, Algorithm Design Specification (eleven optimization neighbourhoods, simulated-annealing strategy), and Validation & Benchmark Specification are normative for the Platform engine. **They are not yet in the constitutional repository (BLOCKER-S1).** Proposed CTR-S1 resolution for ratification: the frozen formulation is the target; the Validated greedy pipeline is retained as the initial-solution constructor and as the degraded-mode engine (advice degrades to a simpler engine before degrading to absence).
+## 5. Canonical formulation & algorithm (normative by reference — STD-003/004/005)
+STD-003 (Mathematical Specification, incl. Problem Definition), STD-004 (Algorithm Design — optimization neighbourhoods, simulated annealing), and STD-005 (Validation & Benchmark) are normative for the Platform engine. **CTR-S1 ratified:** the validated Aperture allocator is the initial constructor and degraded-mode implementation; the frozen model defines the constitutional target. **CTR-S2 ratified:** ESLA contributes the interaction/proposal workflow, Aperture the validated engine; the Advisory Contract (CON-001) governs suggestion production; the frozen model governs correctness. Lineage: Salle → ESLA → Aperture → Frozen Mathematical Specification → Platform.
 
 ## 6. Acceptance corpus & edge cases
 Aperture's 3,184-line seating test corpus is adopted as the seed acceptance corpus (migrated as behavioural specifications, not code). Edge cases carried from evidence: unseated guests as first-class suggestion state; override with reason; host-allocated-unconfirmed guests in remainder pass; kids-zone eligibility; accessibility-compatible scarcity; anchor guests (host proximity) with rank ties.

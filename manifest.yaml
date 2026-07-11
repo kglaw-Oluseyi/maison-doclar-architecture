@@ -6,7 +6,10 @@
 # Precedence order for conflicting statements (DI-020):
 #   1. /constitution  2. /governance  3. /knowledge (current)  4. /architecture/standards  5. /architecture/deliverables (historical)
 artifacts:
-  - {id: STD-001, name: PLATFORM-SEATING-SPEC, path: architecture/specifications/STD-001-platform-seating-specification.md, version: "1.0-draft", status: Draft-blocked}
+  - {id: STD-001, name: PLATFORM-SEATING-SPEC, path: architecture/specifications/STD-001-platform-seating-specification.md, version: "1.0", status: Ratified}
+  - {id: STD-003, name: FROZEN-SEATING-MATH-SPEC, path: architecture/specifications/frozen/STD-003-frozen-seating-mathematical-specification.md, version: frozen, status: Frozen}
+  - {id: STD-004, name: FROZEN-SEATING-ALGORITHM-DESIGN, path: architecture/specifications/frozen/STD-004-frozen-seating-algorithm-design-specification.md, version: frozen, status: Frozen}
+  - {id: STD-005, name: FROZEN-SEATING-VALIDATION-SPEC, path: architecture/specifications/frozen/STD-005-frozen-seating-validation-benchmark-specification.md, version: frozen, status: Frozen}
   - {id: STD-002, name: GUEST-DOMAIN-SPEC, path: architecture/specifications/STD-002-guest-domain-specification.md, version: "1.0-draft", status: Draft}
   - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
   - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
