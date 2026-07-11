@@ -1,0 +1,38 @@
+# Decision Register — Decision Intelligence Seed Corpus (C24)
+Format: Situation · Decision · Reasoning · Alternatives considered · Status. Every entry is citable as `DI-xxx`.
+
+**DI-001 · Program constitution.** Independent portfolio review commissioned; no prior architectural decision assumed correct by default, except event-scoping (ratified prior). Status: in force.
+
+**DI-002 · Aperture strategy corrected.** Situation: "freeze Aperture" wording. Decision: knowledge is baselined; the repository and product are never frozen; Aperture continues as the actively developed **Maison Signature** edition; **Maison Platform** (Aperture V2 / Event OS) is a new lineage cut from a documented baseline. Alternatives: operational freeze (rejected — live Signature clients); clone-and-freeze (rejected — severs history, freezes a living product). Status: ratified.
+
+**DI-003 · Business map.** Two revenue engines (Events, Studios), one arm's-length product (Plavent), permanently internal nervous system (Nexus, Corporate Intelligence, Platform Engineering). Nexus is the company ERP and never becomes the Event OS. Status: ratified.
+
+**DI-004 · Never-sell classifications.** MPS and the protocol layer of Communications are never sold; the Channel Engine may be commercial one day only stripped of the protocol layer; the seating optimiser is never licensed standalone. Status: ratified (with ICAA's engine/protocol split).
+
+**DI-005 · Nucleus.** Deprecated read-only legacy (security-only, knowledge source, non-operational) — deprecation, not archival. Alternatives: retirement/archive (rejected — repositories are cheap, knowledge is not). Status: ratified.
+
+**DI-006 · Intelligence proxy mandate revoked.** Reality: 15 direct call sites. Decision: govern, don't proxy — AI Governance owns policy/registries/budgets/routing/evaluation/observability and is never in the execution path. Alternatives: enforce the proxy (rejected — latency, coupling, and the mandate had already lost). Status: ratified.
+
+**DI-007 · Premature merges deferred.** Repository consolidation is not performed where Platform absorption makes it redundant work. Status: ratified. Superseded in part by DI-013 (no merge category exists at all).
+
+**DI-008 · Capability constitution.** Maison owns capabilities; systems realize them. Capabilities are peers; none owns another. Asset hierarchy: Knowledge → Capability → Service → Experience. Status: ratified.
+
+**DI-009 · Two-plane architecture.** Execution Plane (event-scoped, owns truth) and Intelligence Plane (reasons over the governed Knowledge Store, returns advice only), reconciling the Guest Knowledge Graph with the event-scoping principle. Knowledge is passive; intelligence is computation over knowledge; the store is named **Knowledge Store**. Alternatives: master guest ID (rejected — ratified principle, contamination history); no graph (rejected — forfeits compounding). Status: ratified.
+
+**DI-010 · Advisory contract.** Envelope and rules per `/contracts/advisory-contract.md`. Execution accepts/modifies/rejects and always records why. Status: ratified.
+
+**DI-011 · MPS elevated.** Maison Protocol System is the company's primary IP, versioned immutably; every event and recommendation pins its MPS version. Status: ratified.
+
+**DI-012 · Platform topology: Option C.** Modular-monolith Execution core + separately deployed Intelligence Plane + worker tier, one monorepo. The candidate Event OS blueprint upheld except its one-application-one-database clause. Alternatives: pure monolith (weaker knowledge preservation), federation (rejected on operational evidence — see Negative Knowledge #1), event-driven backbone (rejected for event-day truth; its fact-log adopted as pipeline transport). Collapse back to one deployable preserved as a two-way door. Status: ratified.
+
+**DI-013 · Knowledge-first repository strategy.** Mandatory Knowledge Preservation Matrix before repository fates; classification justified exclusively by knowledge economics; no merge category; nine classification states; classifications are versioned constitutional state with rationale, evidence, and DI references. Status: ratified.
+
+**DI-014 · MKC.** Every knowledge artifact is invalid unless MKC accepts it. Confidence classes Canonical/Validated/Observed/Hypothesis/Historical; founder content graded Founder-authored → Founder-verified → Constitutionally ratified ("Canonical-by-founder" struck). Failures preserved as Negative Knowledge. Status: ratified in outline; full charter pending.
+
+**DI-015 · Signature advice access.** Signature consumes Intelligence Plane advice under the strict one-way contract (no Knowledge Store reads/writes; event-scoped context only; accept/reject recorded to Decision Intelligence; knowledge admission from Signature only via deliberate human review). The Intelligence Plane is a shared constitutional service. Status: ratified.
+
+**DI-016 · Gateway ruling.** Knowledge split into four independently preserved assets (identity translation; trust/permission filtering; webhook relay/retry; key management). Runtime: Living system while satellites depend on it; no new capabilities; trajectory Legacy → Read-only on named instruction. Policy-enforcement and partner-API futures assigned to the Platform seam and AI Governance respectively. Status: ratified.
+
+**DI-017 · Constitutional repository.** `maison-doclar-architecture` created as the constitutional (not merely architecture) repository, closing Negative Knowledge #7. Structure: constitution/capabilities/knowledge/decisions/architecture/governance/contracts. Status: approved and executed.
+
+**DI-018 · Alakija sequencing wall.** No system serving the 23 July 2026 event changes behaviour before close-out; extraction work is non-invasive and proceeds immediately. Status: in force.
