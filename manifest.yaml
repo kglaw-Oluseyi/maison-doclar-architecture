@@ -6,6 +6,7 @@
 # Precedence order for conflicting statements (DI-020):
 #   1. /constitution  2. /governance  3. /knowledge (current)  4. /architecture/standards  5. /architecture/deliverables (historical)
 artifacts:
+  - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
   - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
   - {id: MXS-001, name: MXS,                 path: constitution/MXS/README.md,             version: "0.1", status: Draft}
   - {id: MKC-001, name: MKC,                 path: constitution/MKC/README.md,             version: "0.1", status: Ratified-outline}

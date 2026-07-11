@@ -52,3 +52,7 @@ Format: Situation · Decision · Reasoning · Alternatives considered · Status.
 **DI-025 · Advisory envelope is a versioned protocol.** Additive = minor; removal/rename = major; consumers declare supported versions. Status: ratified and executed (CON-001 v1.2).
 
 **DI-026 · Assumption registry.** Decisions reference assumptions by ID; lifecycles tracked in GOV-004 and analysed in derived intelligence. Seeded A-001–A-007. Status: ratified and executed.
+
+**DI-027 · Deliverable 07 ratified.** (a) Shared-infrastructure boundary rule ("no domain vocabulary in the interface") and the seven-package kernel set; (b) **C17: build the minimal internal identity provider** — decisive argument event-day sovereignty (A-003); assumption A-008 registered, reopening build-vs-buy if expired; (c) AI Governance realized as registry + revocable per-call-site keys + asynchronous usage telemetry, never interception; (d) the Commission contract as the sole Platform⇄Studios interface with the access-vs-delight rule assigning credential rendering to the Platform worker tier. Status: ratified.
+
+**DI-028 · Architecture Freeze v1.0.** Deliverables 01–07 are Architecture Baseline v1.0 (ARCH-001). Subsequent work is realization/extraction/specification/implementation/migration only; architectural change requires constitutional amendment. Discipline: derive, specify, preserve. Status: ratified and in force.
