@@ -33,6 +33,6 @@ Format: Situation · Decision · Reasoning · Alternatives considered · Status.
 
 **DI-016 · Gateway ruling.** Knowledge split into four independently preserved assets (identity translation; trust/permission filtering; webhook relay/retry; key management). Runtime: Living system while satellites depend on it; no new capabilities; trajectory Legacy → Read-only on named instruction. Policy-enforcement and partner-API futures assigned to the Platform seam and AI Governance respectively. Status: ratified.
 
-**DI-017 · Constitutional repository.** `maison-doclar-architecture` created as the constitutional (not merely architecture) repository, closing Negative Knowledge #7. Structure: constitution/capabilities/knowledge/decisions/architecture/governance/contracts. Status: approved and executed.
+**DI-017 · Constitutional repository.** `maison-doclar-architecture` created as the constitutional (not merely architecture) repository, closing Negative Knowledge #7. Structure: constitution/capabilities/knowledge/decisions/architecture/governance/contracts. Status: approved and executed — pushed to kglaw-Oluseyi/maison-doclar-architecture, remote HEAD 6a394d513788 verified via GitHub API on 11 July 2026.
 
 **DI-018 · Alakija sequencing wall.** No system serving the 23 July 2026 event changes behaviour before close-out; extraction work is non-invasive and proceeds immediately. Status: in force.
