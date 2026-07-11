@@ -15,6 +15,7 @@ artifacts:
   - {id: STD-007, name: EVENT-DAY-RUNTIME-SPEC, path: architecture/specifications/STD-007-event-day-runtime-specification.md, version: "1.0-draft", status: Draft}
   - {id: GOV-005, name: IMPLEMENTATION-READINESS, path: governance/implementation-readiness.md, version: living, status: Ratified}
   - {id: STD-008, name: INTELLIGENCE-PLANE-CONTRACTS, path: architecture/specifications/STD-008-intelligence-plane-contracts.md, version: "1.0-draft", status: Draft}
+  - {id: ARCH-002, name: AUTONOMOUS-EVENT-OS-VISION, path: architecture/autonomous-event-os-vision.md, version: "1.0", status: Ratified-lens}
   - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
   - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
   - {id: MXS-001, name: MXS,                 path: constitution/MXS/README.md,             version: "0.1", status: Draft}

@@ -42,3 +42,6 @@ O-1 MPS v1.0 publication (CM-11). O-2 The CommunicationContact entity shape fina
 | CON-001 | advisory requests (send-time/channel) | accept/reject → C24 |
 | Provides to | ledger pipeline (declared) | Intelligence Plane (engagement graphs) |
 | Provides to | card-delivery hooks, status fanout | C9, STD-007 |
+
+## 9. Objective interface (ARCH-002 lens)
+Objective form: *achieve the RSVP/confirmation target by the specified date while respecting protocol, consent, budget, and fatigue caps.* Composes: campaigns/stages, preference routing, advisory send-time/channel advice, suppression discipline — CM-5/CM-9 courtesy gates are inviolable regardless of objective pressure.

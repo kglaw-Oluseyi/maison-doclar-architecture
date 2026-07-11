@@ -41,3 +41,6 @@ Signature keeps its engine untouched (managed divergence). ESLA becomes Read-onl
 | C17 Identity | kernel client | attributable review actions |
 | Kernel workers | DI-027 harness | allocator runs |
 | Provides to | — | STD-007 (published allocations), C10 Reporting (explainable placements), C24 (accept/reject decisions) |
+
+## 9. Objective interface (ARCH-002 lens)
+The capability's objective form: *continually optimise seating as event knowledge changes, preserving protocol and explaining every recommendation.* Composes: allocator runs, advisory priors, review cycles, action stack — under existing gates (host approval, CON-001, MPS pinning). No new primitives.

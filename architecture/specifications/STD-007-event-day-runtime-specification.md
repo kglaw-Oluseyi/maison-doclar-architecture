@@ -38,3 +38,6 @@ Donor behaviours adopted as specifications: snapshot ingestion/publication/deliv
 
 ## 6. Open items
 O-1 Incident category taxonomy final shape (donor enum extraction pass). O-2 ShowControl cue-sheet grammar (live deep extraction). O-3 Hub hardware/provisioning standard (implementation-guidance document, not constitutional).
+
+## 7. Objective interface (ARCH-002 lens)
+Objective form: *keep the event day within plan — doors flowing, incidents contained, truth distributed — escalating to humans only on genuine judgement.* Composes: snapshots, fanouts, ledgers, show control, advisory priors; ED-8 stands — autonomy degrades to manual operation, never the reverse dependency.

@@ -37,7 +37,11 @@ evidence_refs: [architecture/deliverables/03-capability-map-and-shared-capabilit
 ## Tier 4 — Commodity (never differentiate, never build twice)
 - **C17 · Staff/Host/Planner Identity** · **C18 · Storage & Media Infra** · **C19 · Payments** · **C20 · Delivery Plumbing** · **C21 · Telemetry**
 
+## The autonomy lens (ARCH-002, binding)
+Every capability answers: *can an autonomous planning agent operate it without continual human control?* Capabilities expose objectives, not just operations; all objective interfaces compose existing governed operations.
+
 ## Reserved
+- **C25 · Mission Planning** — long-horizon objective decomposition, delegation, monitoring, adaptation, escalation. Reserved (ARCH-002); enters via constitutional process before specification.
 - **Maison Ontology System** — governs meaning; registered as future sibling (2–3 year horizon), not a current work item.
 
 ## Realization register (current)

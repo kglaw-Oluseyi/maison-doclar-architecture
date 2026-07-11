@@ -37,3 +37,6 @@ O-1 Final RSVP flag/mode shape — founder ruling on corpus §6. O-2 MPS v1.0 pu
 | Kernel storage/workers | DI-027 adapters | import processing |
 | Provides to | audience snapshots + change events (module contract) | STD-001, STD-006, STD-007, C9, C10 |
 | Provides to | declared fact pipelines | Intelligence Plane (Guest Graph) |
+
+## 8. Objective interface (ARCH-002 lens)
+Objective form: *maintain the planner's understanding of the guest ecosystem; surface uncertainty; request clarification only when its answer is missing and valuable for this event; continuously improve readiness (G0–G5).* Composes: imports, dedup ledger, revisions, quality grading, trust ladder — EIDL's minimum-question principle is this objective's governing constraint.
