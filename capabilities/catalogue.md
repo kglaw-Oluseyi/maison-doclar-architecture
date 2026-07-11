@@ -1,3 +1,13 @@
+---
+artifact_id: CAP-CATALOGUE
+version: 1.0
+status: Ratified
+effective_date: 2026-07-11
+supersedes: none
+depends_on: [MPS, MXS, MKC]
+decision_refs: [DI-008, DI-009]
+evidence_refs: [architecture/deliverables/03-capability-map-and-shared-capability-matrix.md]
+---
 # Maison Doclar — Capability Catalogue
 **Maison owns capabilities; systems realize them.** Capabilities are peers; none owns another. Full definitions: Deliverable 03 (as amended by Deliverables 04–05 ratifications).
 

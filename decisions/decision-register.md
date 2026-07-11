@@ -36,3 +36,9 @@ Format: Situation · Decision · Reasoning · Alternatives considered · Status.
 **DI-017 · Constitutional repository.** `maison-doclar-architecture` created as the constitutional (not merely architecture) repository, closing Negative Knowledge #7. Structure: constitution/capabilities/knowledge/decisions/architecture/governance/contracts. Status: approved and executed — pushed to kglaw-Oluseyi/maison-doclar-architecture, remote HEAD 6a394d513788 verified via GitHub API on 11 July 2026.
 
 **DI-018 · Alakija sequencing wall.** No system serving the 23 July 2026 event changes behaviour before close-out; extraction work is non-invasive and proceeds immediately. Status: in force.
+
+**DI-019 · Constitutional machine-discoverability & self-contained advice.** Every constitutional artifact exposes metadata (artifact ID, version, status, effective date, supersedes, depends-on, decision refs, evidence refs) via front-matter and the root `manifest.yaml`. Advisory requests are self-contained (event context, version pins, request ID, timestamp); the advisory service never discovers against requesting systems. Status: ratified and executed.
+
+**DI-020 · Register/Intelligence separation & precedence.** The Decision Register is the immutable append-only legal record; Decision Intelligence derived views live in `/decisions/derived` and evolve freely. Conflicting-statement precedence: Constitution → Governance → Current Knowledge → Architecture Standards → Historical Deliverables. Status: ratified and executed.
+
+**DI-021 · Knowledge Extraction Workspace.** `maison-doclar-knowledge-extraction` created as a private staging repository (/raw /extracted /review /promoted /scripts) separating ETL-style extraction from constitutional governance. Promotion into the constitutional repository is an explicit governed action. Raw evidence is committed as excerpts with path+commit provenance, never as full clones, and never containing guest PII. Status: approved and executed.

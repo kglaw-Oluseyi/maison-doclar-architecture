@@ -1,3 +1,13 @@
+---
+artifact_id: MKC
+version: 0.1
+status: Ratified-outline
+effective_date: 2026-07-11
+supersedes: none
+depends_on: []
+decision_refs: [DI-014]
+evidence_refs: [architecture/deliverables/05-platform-and-company-architecture.md]
+---
 # Maison Knowledge Constitution (MKC)
 **Status: v0.1 — outline ratified (Deliverable 05 §6, as amended). Full charter to follow.**
 

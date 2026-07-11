@@ -1,3 +1,13 @@
+---
+artifact_id: MXS
+version: 0.1
+status: Draft
+effective_date: 2026-07-11
+supersedes: none
+depends_on: [MKC]
+decision_refs: [DI-008]
+evidence_refs: [knowledge/preservation-matrix.md]
+---
 # Maison Experience System (MXS)
 **Status: v0.1 — charter. Constitution to be authored by the group design authority.**
 

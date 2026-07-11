@@ -1,0 +1,2 @@
+# Decision Intelligence — Derived Knowledge (evolves continuously)
+The Decision Register (`../decision-register.md`) is the immutable, append-only legal record and is never edited (only appended). This directory holds **derived** intelligence over that record and over operational decisions as they accrue: decisions by capability, topology reversals, decisions later overturned, decisions whose assumptions expired, reversal rates, evidence-confidence trends. Derived views are regenerable and freely revised; the register is not. (DI-020)

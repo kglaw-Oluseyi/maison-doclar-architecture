@@ -1,3 +1,13 @@
+---
+artifact_id: MPS
+version: 0.1
+status: Draft
+effective_date: 2026-07-11
+supersedes: none
+depends_on: [MKC]
+decision_refs: [DI-011]
+evidence_refs: [knowledge/preservation-matrix.md#A8]
+---
 # Maison Protocol System (MPS)
 **Status: v0.1 — assembly charter. Target: MPS v1.0 (constitutionally ratified).**
 

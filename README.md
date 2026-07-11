@@ -17,4 +17,10 @@ This is the constitutional repository of Maison Doclar. It is the single version
 4. Every knowledge artifact is invalid unless MKC accepts it. MKC preserves failures with the same rigor as successes.
 5. No repository transition (read-only, archive) occurs without explicit named approval, an execution plan, and a Decision Intelligence record.
 
+## Precedence (DI-020)
+For any conflicting statement: **1. Constitution → 2. Governance → 3. Current Knowledge → 4. Architecture Standards → 5. Historical Deliverables.**
+
+## Continuous constitutional maintenance (standing workstream, not a milestone)
+MPS assembly · Founder elicitation (three independent capture streams: Declarative, Procedural, Judgement) · Knowledge promotion from the extraction workspace · Decision Intelligence enrichment.
+
 *Repository established 11 July 2026 under Strategic Architecture Program Deliverable 06B approval.*

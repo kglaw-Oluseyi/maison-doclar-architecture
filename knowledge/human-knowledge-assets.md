@@ -1,5 +1,5 @@
 # Human Knowledge Assets Register
-The founder is the highest-replacement-cost repository in the company. This register is a standing MKC obligation, not a one-time interview. Three kinds (ICAA ruling):
+The founder is the highest-replacement-cost repository in the company. This register is a standing MKC obligation, not a one-time interview. Capture runs as **three independent streams** — each with its own cadence and method (ICAA ruling):
 
 ## Declarative — can be written
 Protocol rules, VIP precedence, titles, address forms, invitation custom. → Elicited directly into MPS, marked `Founder-authored` until `Founder-verified`, ratified by constitutional process.

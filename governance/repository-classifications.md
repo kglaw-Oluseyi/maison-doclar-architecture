@@ -1,5 +1,15 @@
+---
+artifact_id: REPO-CLASSIFICATIONS
+version: 1.1
+status: Ratified
+effective_date: 2026-07-11
+supersedes: none
+depends_on: [MKC]
+decision_refs: [DI-013, DI-016]
+evidence_refs: [knowledge/preservation-matrix-addendum-v1.1.md#A7]
+---
 # Repository Classifications — Versioned Constitutional State
-Rule (DI-013): classification is versioned state, never permanent metadata. Every change records: classification · effective date · rationale · evidence · superseded state · DI reference. Read-only/archive transitions occur only via: recommendation → explicit named approval → execution plan → transition → DI record.
+Rule (DI-013): classification is versioned state, never permanent metadata. Every change records: classification · effective date · rationale · evidence · superseded state · DI reference. Read-only/archive transitions occur only via four explicit steps, each auditable: **1. Recommendation → 2. Named approval → 3. Transition plan → 4. Recorded completion (DI record).** A document is never sufficient cause for a transition.
 
 | Repository | Classification (2026-07) | Trajectory | DI |
 |---|---|---|---|
