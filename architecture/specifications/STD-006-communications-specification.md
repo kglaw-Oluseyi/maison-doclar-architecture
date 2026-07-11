@@ -31,3 +31,14 @@ Herald §15's edge-case catalogue (all 12+ cases) adopted as behavioural specifi
 
 ## 7. Open items
 O-1 MPS v1.0 publication (CM-11). O-2 The CommunicationContact entity shape finalizes against the Data Acquisition canonical spec during that document's extraction pass. O-3 Escalation-record consumer (who works FAILED-terminal escalations) lands with the Event-Day/operator surface spec.
+
+## 8. Capability dependency matrix (DI-037 artifact)
+| Depends on | Consumed through | Provides to |
+|---|---|---|
+| MPS / MXS | versioned packages (address forms, templates, tone) | — |
+| STD-002 Guest Domain | audience snapshots, contact links | RSVP writeback |
+| Kernel delivery adapters | DI-027 (Herald §9 contract shape) | — |
+| C16 AI Governance | issued keys, registered prompts | usage telemetry |
+| CON-001 | advisory requests (send-time/channel) | accept/reject → C24 |
+| Provides to | ledger pipeline (declared) | Intelligence Plane (engagement graphs) |
+| Provides to | card-delivery hooks, status fanout | C9, STD-007 |

@@ -30,3 +30,14 @@ Aperture's 3,184-line seating test corpus is adopted as the seed acceptance corp
 
 ## 7. Migration notes
 Signature keeps its engine untouched (managed divergence). ESLA becomes Read-only after this spec's ratification per GOV-002 (named instruction still required). The Platform seating package implements this spec only after: BLOCKER-S1 cleared, CTR-S1/S2 ruled, MPS v1.0 published (I-10 dependency).
+
+## 8. Capability dependency matrix (DI-037 artifact)
+| Depends on | Consumed through | Provides to |
+|---|---|---|
+| STD-003/004/005 Frozen specs | normative reference | engine correctness |
+| STD-002 Guest Domain | audience snapshots, relationship declarations, import-lock signal | — |
+| MPS | versioned package (tiers, protocol) | — |
+| CON-001 | suggestion-production contract (CTR-S2) | operator/host surfaces |
+| C17 Identity | kernel client | attributable review actions |
+| Kernel workers | DI-027 harness | allocator runs |
+| Provides to | — | STD-007 (published allocations), C10 Reporting (explainable placements), C24 (accept/reject decisions) |

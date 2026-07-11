@@ -27,3 +27,13 @@ Aperture's guests/rsvp test suites (import preview, parse, exact-duplicate merge
 
 ## 6. Open items
 O-1 Final RSVP flag/mode shape — founder ruling on corpus §6. O-2 MPS v1.0 publication (G-11 dependency). O-3 Relationship-declaration richness (strength scales) — reconcile with STD-001's consumption during seating implementation.
+
+## 7. Capability dependency matrix (DI-037 artifact)
+| Depends on | Consumed through | Provides to |
+|---|---|---|
+| MPS | versioned package (titles, tiers, household grammar) | — |
+| C17 Identity | kernel client | attributable revisions |
+| MKC | sensitivity classes on fields | — |
+| Kernel storage/workers | DI-027 adapters | import processing |
+| Provides to | audience snapshots + change events (module contract) | STD-001, STD-006, STD-007, C9, C10 |
+| Provides to | declared fact pipelines | Intelligence Plane (Guest Graph) |
