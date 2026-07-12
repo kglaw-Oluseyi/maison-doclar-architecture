@@ -22,7 +22,7 @@ artifacts:
   - {id: GOV-009, name: HANDOVER-INVENTORY, path: governance/GOV-009-handover-inventory.md, version: "1.0", status: Ratified-operational}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
   - {id: AMM-001, name: AUTONOMY-MATURITY-MODEL, path: architecture/AMM-001-autonomy-maturity-model.md, version: "1.0", status: Ratified-guide}
-  - {id: EIX-001, name: EXPERIENCE-SPECIFICATION, path: architecture/EIX-001-executive-intelligence-experience-specification.md, version: "1.0", status: Ratified-experience-reference}
+  - {id: EIX-001, name: EXPERIENCE-SPECIFICATION, path: architecture/EIX-001-executive-intelligence-experience-specification.md, version: "1.1", status: Ratified-experience-reference}
   - {id: EIX-002, name: SURFACE-MAP-V1, path: architecture/EIX-002-surface-map-v1.md, version: "1.0", status: Ratified-companion}
   - {id: ARCH-005, name: EXECUTIVE-INTELLIGENCE-ARCHITECTURE, path: architecture/ARCH-005-executive-intelligence-architecture.md, version: "1.0", status: Ratified-lens-final}
   - {id: ARCH-004, name: EXECUTIVE-INTELLIGENCE-VISION, path: architecture/ARCH-004-executive-intelligence-vision.md, version: "1.0", status: Ratified-north-star}

@@ -1,7 +1,7 @@
 ---
 artifact_id: EIX-001
 name: Executive Intelligence Experience Specification
-version: "1.0"
+version: "1.1"
 status: Ratified experience reference (freeze on principal disposition) — the review lens for every user-facing implementation
 effective_date: 2026-07-12
 depends_on: [ARCH-004, ARCH-005, MXS-001, MPS-001, AMM-001, CON-001, GOV-006, all STD specifications]
@@ -13,6 +13,12 @@ The experience pillar. ARCH-005 defines how the Executive Intelligence behaves i
 
 ## 1. Product Philosophy
 This is not event software, not CRM, not project management. **It is an Executive Intelligence. The interface exists to help a founder direct an organisation, not operate one.** Every design decision descends from that sentence. The measure of a screen is not features shown but judgement enabled: what the director needs to know, decide, delegate, or interrupt — and nothing else, until asked. The events domain is the first realized domain (ARCH-004); the experience must feel like directing an enterprise whose first business is luxury events, never like using an events tool with AI attached.
+
+## 1a. The Overarching Principle (v1.1, DI-059)
+**Every interface should feel like a conversation with a highly competent executive, even when no chat window is present.** Every surface therefore answers, before the user asks: *What is happening? Why does it matter? What do you recommend? What happens if I approve? What are the risks? What evidence supports this?* A screen that cannot answer those six is not finished.
+
+## 1b. Universality (v1.1)
+This specification is the product application of the **Maison Doclar Experience System** and governs **every** human interaction with the Executive Intelligence across the estate — Executive Dashboard, Mission Workspace, Guest, Communications, Event Day, Creative Studio, Commission Studio, Vendor, Analytics, Engineering Intelligence, mobile, guest-facing, and host experiences alike. The user always feels they are interacting with **one intelligence, not different products**: recommendations look identical whether approving seating, designing invitations, reviewing suppliers, or deploying software; the interaction pattern is everywhere **Intent → Recommendation → Human refinement → Approval**; and the AI's personality is one voice — the same executive assistant generating a microsite, reviewing a seating plan, composing an email, analysing guest data, or proposing a code change. Creative surfaces lead with intent, never raw controls ("Create an elegant save-the-date · 250 guests · timeless luxury" before any canvas-size field — refinement follows generation). Engineering Intelligence reviews render in the same grammar as everything else: overall confidence, observations, recommendation, evidence — never a raw static-analysis dump. Creative Studio must never feel like a separate application; it feels like *asking your Executive Intelligence to create something*.
 
 ## 2. Interaction Philosophy (permanent design rules)
 **AI first · Conversation first** — the primary input is intent expressed naturally; the Command Bar is the front door, forms are the fallback. **Recommendations before configuration** — the system proposes; settings exist behind proposals, not in front of them. **Intent before forms** — "achieve 95% RSVP by the 1st" is a valid input everywhere a campaign wizard exists. **Executive summaries before detail** — every surface opens at judgement altitude with one-click descent to evidence. **Exceptions before normality** — what needs attention leads; what is healthy is quiet (Mission Health's grammar: Stable / Attention Required / At Risk / Recommendations). **Explain every recommendation** — reasoning is one click away, always (STD-008 G-4 made visible). **Never hide manual control** — every automated pathway has a visible manual equivalent. **Autonomy must always be interruptible** — a running autonomous action shows a live, reachable interrupt; demotion needs no ceremony (AMM-001). **Confidence always visible, never theatrical** — intervals, staleness, and "prior-only" render honestly (STD-008 envelope law as UI law). **Approval is a first-class experience** — at L2, the Approval Inbox is where the founder's leverage lives; it must be the calmest, fastest surface in the product.
