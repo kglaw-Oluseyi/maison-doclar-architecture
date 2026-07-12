@@ -51,7 +51,7 @@ Each entry: **primary class (today) · secondary classes · trajectory**, with k
 ## 2. New repositories (require your explicit approval to create)
 
 1. **maison-doclar-architecture** — the constitutional repository: this program's deliverables, the decision register (Decision Intelligence seed), MPS v1.0 assembly, MKC charter, MXS constitution, fossils and negative-knowledge registers, lineage records. This closes the A6 "unversioned architecture" failure. Recommended immediately.
-2. **maison-platform** — the Event OS monorepo (Execution + Intelligence planes), created only when the roadmap's preparation phase completes and cut from the documented baseline per your Aperture-V2 strategy. Not yet.
+2. **maison-platform** — the Platform monorepo (Execution + Intelligence planes) (Execution + Intelligence planes), created only when the roadmap's preparation phase completes and cut from the documented baseline per your Aperture-V2 strategy. Not yet.
 
 ## 3. Classification mechanics (definitions, so status is never ambiguous)
 

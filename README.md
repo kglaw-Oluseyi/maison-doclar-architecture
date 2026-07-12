@@ -16,6 +16,8 @@ This is the constitutional repository of Maison Doclar. It is the single version
 3. Execution never queries Intelligence; it requests advice and always records its decision. Advice degrades to absence, never to failure.
 4. Every knowledge artifact is invalid unless MKC accepts it. MKC preserves failures with the same rigor as successes.
 5. No repository transition (read-only, archive) occurs without explicit named approval, an execution plan, and a Decision Intelligence record.
+6. **Capability is not authority** (ARCH-004/DI-048): possessing a technical capability — a PAT, deployment access, a communication channel — implies no authority to use it. Authority derives exclusively from constitutional governance.
+7. **The Executive Intelligence is not the enterprise; it is the constitutional operator of the enterprise** (DI-048). The enterprise remains founder-led, human-owned, constitution-governed. North Star: ARCH-004 — an Autonomous Enterprise Operating System, luxury event operations as its first realized domain, bounded permanently to the Maison Doclar estate.
 
 ## Precedence (DI-020)
 For any conflicting statement: **1. Constitution → 2. Governance → 3. Current Knowledge → 4. Architecture Standards → 5. Historical Deliverables.**

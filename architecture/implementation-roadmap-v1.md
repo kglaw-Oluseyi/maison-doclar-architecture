@@ -1,7 +1,7 @@
 ---
 artifact_id: ARCH-003
 name: Implementation Roadmap v1 — the realization backbone
-version: "1.0-draft"
+version: "1.1-draft"
 status: Draft — review pending
 effective_date: 2026-07-11
 depends_on: [ARCH-001, ARCH-002, AMM-001, GOV-005, GOV-006, all STD specifications]
@@ -20,8 +20,10 @@ Builds: Knowledge Store + first declared pipelines (comms ledger, event-day less
 Promotes by evidence, capability by capability: drafted communications, seating proposals, vendor shortlists, schedule adjustments — prepared autonomously, executed on human approval (**L2**). First policy envelopes ratified (budgets, fatigue caps, protocol gates) for early **L3** candidates: import/dedup by policy, fanout operations, report generation (dispatch still human). Every promotion a register entry citing telemetry. Permanent floors enforced mechanically from day one of this phase.
 ## Phase E — Supervised Autonomy (long-running plans)
 Requires: **C25 Mission Planning chartered through the constitutional process** (its precondition — "existing capabilities sufficiently specified" — is met at this phase's gate) with the Goal primitive as its backbone; Goals decompose into capability objectives (the ARCH-002 interfaces), monitored continuously, exceptions and approvals human. Capabilities at **L3, orchestration at L4-entry**. Director intent expressible: *"achieve 95% RSVP by the 1st; finalize seating by the 15th; all media before the 20th."*
-## Phase F — Autonomous Event OS
-The ARCH-002 end state: one human director, many autonomous agents, governance enforced — MPS authoritative, MKC governing, floors intact, every action DecisionRecord-closed. Reached only through accumulated AMM evidence; never scheduled by date.
+## Phase F — Executive Intelligence operates the estate under supervision
+The ARCH-002 events-domain end state generalized per ARCH-004: one human director (the CEO), the Executive Intelligence operating Maison Doclar's event business — many autonomous agents, governance enforced, MPS authoritative, MKC governing, floors intact, every action DecisionRecord-closed. Reached only through accumulated AMM evidence; never scheduled by date.
+## Phase G — Executive Intelligence continuously improves the estate
+Within constitutional authority: the estate improves itself — software (via the chartered Engineering Intelligence specialization: analysis, refactoring, PRs, reviewed deployment, rollback), operational processes, documentation, and institutional knowledge — with humans as the source of authority and judgement. The destination is not merely autonomous operation but **an organization that continually improves itself while remaining constitutionally governed.**
 
 ## Cross-phase rules
 Alakija wall (DI-018) precedes everything operational. Signature divergence managed per quarter throughout; Signature gains advice consumption (DI-015) in Phase C at the earliest. Corpus extraction and founder elicitation run continuously beside all phases. The constitutional-growth signal (DI-045) is reviewed at each phase gate. Each phase closes with a register entry recording what was earned, not just built.

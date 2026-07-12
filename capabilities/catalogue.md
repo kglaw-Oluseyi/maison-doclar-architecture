@@ -37,6 +37,9 @@ evidence_refs: [architecture/deliverables/03-capability-map-and-shared-capabilit
 ## Tier 4 — Commodity (never differentiate, never build twice)
 - **C17 · Staff/Host/Planner Identity** · **C18 · Storage & Media Infra** · **C19 · Payments** · **C20 · Delivery Plumbing** · **C21 · Telemetry**
 
+## The Executive Intelligence (ARCH-004)
+The product of the programme — **not a capability, and not the enterprise: the constitutional operator of the enterprise** (DI-048). It realizes capabilities; the enterprise remains founder-led, human-owned, constitution-governed. Scope: the Maison Doclar estate, permanently (Urbanac excluded under DI-001).
+
 ## Constitutional primitives
 - **Goal** (DI-044/DI-045): an intent owned by a human authority, evaluated against observable outcomes, decomposable into work, and **never the owner of domain state** — it coordinates domains, owns none. The planning vocabulary of the roadmap and future backbone of C25.
 
@@ -45,6 +48,7 @@ Every capability answers: *can an autonomous planning agent operate it without c
 
 ## Reserved
 - **C25 · Mission Planning** — long-horizon objective decomposition, delegation, monitoring, adaptation, escalation. Reserved (ARCH-002); enters via constitutional process before specification.
+- **Engineering Intelligence family** — reserved (DI-048): a **specialization of the Executive Intelligence**, never a parallel system, inheriting all constitutional governance. Remit on charter: repository analysis, code generation, architecture conformance, refactoring, testing, migration, documentation, pull requests, deployment, rollback.
 - **Maison Ontology System** — governs meaning; registered as future sibling (2–3 year horizon), not a current work item.
 
 ## Realization register (current)
