@@ -47,7 +47,7 @@ The product of the programme — **not a capability, and not the enterprise: the
 Every capability answers: *can an autonomous planning agent operate it without continual human control?* Capabilities expose objectives, not just operations; all objective interfaces compose existing governed operations.
 
 ## Reserved
-- **C25 · Mission Planning** — long-horizon objective decomposition, delegation, monitoring, adaptation, escalation. Reserved (ARCH-002); enters via constitutional process before specification.
+- **C25 · Mission Planning** — **CHARTERED (DI-051)**: the constitutional COO. Owns Objectives, Missions, Execution Graphs, Observations, Replanning, Mission Health, Capability Scheduling. First law: orchestrates capabilities, owns no domain state (DI-045).
 - **Engineering Intelligence family** — reserved (DI-048): a **specialization of the Executive Intelligence**, never a parallel system, inheriting all constitutional governance. Remit on charter: repository analysis, code generation, architecture conformance, refactoring, testing, migration, documentation, pull requests, deployment, rollback.
 - **Maison Ontology System** — governs meaning; registered as future sibling (2–3 year horizon), not a current work item.
 
