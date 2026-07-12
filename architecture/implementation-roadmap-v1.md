@@ -1,7 +1,7 @@
 ---
 artifact_id: ARCH-003
 name: Implementation Roadmap v1 — the realization backbone
-version: "1.1-draft"
+version: "1.2-draft"
 status: Draft — review pending
 effective_date: 2026-07-11
 depends_on: [ARCH-001, ARCH-002, AMM-001, GOV-005, GOV-006, all STD specifications]
@@ -10,7 +10,9 @@ decision_refs: [DI-039, DI-043, DI-045, DI-046]
 # Implementation Roadmap v1 (ARCH-003)
 Phases, not sprints; **dependency waves sequenced by autonomy maturity**, not features. Every capability knows where it is going (AMM level per GOV-006) and what must exist before it may climb (AMM-001 v1.1 evidence gates). Goals (DI-045) are the planning vocabulary throughout: each phase states what a human director can *intend* at its close.
 
-## Phase A — Foundation (no business features)
+## Phase A — The first Executive Intelligence nervous system (reframed, DI-050)
+Objective: not "foundations" but the **constitutional substrate** — six DNA packages every service imports and nothing redefines: `constitution` (artifact IDs, versions, manifests) · `contracts` (AdvisoryEnvelope, FactSubmission, DecisionRecord, LessonSubmission — STD-008 as code) · `mkc` (confidence, provenance, evidence) · `decisions` (decision IDs, traces, authority checks) · `identity` (delegation, authority, actor model) · `observability` (request/correlation IDs, execution traces) — plus the `ai-runtime` abstraction (Models/Agents/Memory/Tools/Planning/Evaluation; every method may initially call Claude; the LLM is replaceable infrastructure). Delivery is by **vertical slices**, never bare infrastructure: Slice 1 proves the nervous system end-to-end (Objective → Advisory → Execution → Decision → Lesson → Knowledge; no UI); Slices 2–4 are Guest, Communications, Seating — each exercising every constitutional layer. The **Executive Intelligence runtime** (Objective → Planner → Mission → Execution Graph → Capability Invocation → Decision Recording → Knowledge Updates → Lessons → Re-planning) is a first-class component from the outset, even while it performs only simple orchestration. Mindset: an organism, not a microservice estate — services are organs; shared language over service boundaries; contracts over transport; observability as cognition; decision records as operational state.
+### Phase A (original foundation list, now serving the reframed objective)
 Builds: C17 identity service + kernel client; kernel packages (storage, delivery adapters, worker harness, observability with end-to-end request IDs, config); contracts realized as code (CON-001/STD-008 envelope types + version negotiation, STD-009 message types); execution + intelligence database provisioning (two stores, never joined — DI-012); MPS/MXS consumed as versioned packages (publication-gated); C16 registry service (registration-only migration can start estate-wide immediately). Exit: a deployable two-plane skeleton where a request can carry an ID from surface → advisory → DecisionRecord. Autonomy: L0 everywhere by definition. **Gates: MPS v1.0 published (founder session); STD-002/006/007/008 Ready for Build.**
 ## Phase B — Operational Core (manual operation, no autonomy)
 Builds, in dependency order from the matrices: guest-data module (STD-002) → communications (STD-006) → access (STD-011) + event-day runtime (STD-007) → seating (STD-001, greedy engine as CTR-S1 constructor) → guest experience (STD-010) → reporting (STD-012); Commission contract live against existing Studios systems (STD-009). Exit: one real event operable end-to-end on the Platform at **L0–L1**, Signature untouched. Director intent expressible: *"run this event manually on the Platform."*
