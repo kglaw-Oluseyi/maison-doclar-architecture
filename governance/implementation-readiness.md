@@ -16,5 +16,8 @@ A specification at **Ready for Build** is stable: engineering treats it as fixed
 | STD-007 Event-Day Runtime | ✓ | ✓ | Draft | Pending | Incident taxonomy (O-1); ShowControl grammar (O-2) |
 | STD-008 Intelligence Plane Contracts | ✓ | ✓ | Draft | Pending | CTR-I1 ruling |
 | STD-009 Media & Commission Contract | ✓ | ✓ | Draft | Pending | — |
+| STD-010 Guest Experience (thin) | ✓ | ✓ | Draft | Pending | — |
+| STD-011 Access (thin) | ✓ | ✓ | Draft | Pending | — |
+| STD-012 Reporting (thin) | ✓ | ✓ | Draft | Pending | — |
 
 **Common blocker across three specs: MPS v1.0 founder disposition** — the only remaining constitutional knowledge that cannot be extracted from software. A dedicated founder session is scheduled for: title precedence (GAP-01), RSVP decomposition ruling (corpus §6), entourage/invitation-culture/diplomatic gaps (GAP-02/03/05), seating judgement examples (Judgement stream → Decision Intelligence).
