@@ -65,4 +65,4 @@ All 28 Living systems above remain production-operational and outside the Platfo
 **Open daily:** `maison-platform` (implement), `maison-doclar-architecture/decisions/decision-register.md` + `governance/implementation-readiness.md` (steer), and — until its passes finish — `maison-doclar-knowledge-extraction`.
 **Consult, don't edit:** specifications (STD-*), ARCH-005 (the lens), frozen specs, corpus.
 **Effectively read-only now (formal transition on your instruction):** nucleus, ESLA, maison-doclar-music, maison-doclar-intelligence, deliverables 01–07, the frozen specifications, and the Historical Design Corpus.
-**The one-question filter for every Cursor session (DI-053):** *does this make the Executive Intelligence a more capable constitutional operator of the Maison Doclar estate?*
+**The one-question filter for every Cursor session (DI-053, as amended by DI-056):** *does this change increase the Executive Intelligence's ability to **safely** operate the Maison Doclar estate while remaining constitutionally governed?* — "safely" carrying reliability, observability, rollback, security, and governance, not just capability.
