@@ -37,6 +37,9 @@ evidence_refs: [architecture/deliverables/03-capability-map-and-shared-capabilit
 ## Tier 4 — Commodity (never differentiate, never build twice)
 - **C17 · Staff/Host/Planner Identity** · **C18 · Storage & Media Infra** · **C19 · Payments** · **C20 · Delivery Plumbing** · **C21 · Telemetry**
 
+## Constitutional primitives
+- **Goal** (DI-044/DI-045): an intent owned by a human authority, evaluated against observable outcomes, decomposable into work, and **never the owner of domain state** — it coordinates domains, owns none. The planning vocabulary of the roadmap and future backbone of C25.
+
 ## The autonomy lens (ARCH-002, binding)
 Every capability answers: *can an autonomous planning agent operate it without continual human control?* Capabilities expose objectives, not just operations; all objective interfaces compose existing governed operations.
 
