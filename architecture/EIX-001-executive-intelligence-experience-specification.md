@@ -1,8 +1,8 @@
 ---
 artifact_id: EIX-001
-name: Executive Intelligence Experience Specification
-version: "1.1"
-status: Ratified experience reference (freeze on principal disposition) — the review lens for every user-facing implementation
+name: Maison Doclar Design System (Executive Intelligence Experience Specification)
+version: "1.2"
+status: FROZEN (DI-060) — the Maison Doclar Design System; the review lens for every user-facing implementation. Amendments only via constitutional process.
 effective_date: 2026-07-12
 depends_on: [ARCH-004, ARCH-005, MXS-001, MPS-001, AMM-001, CON-001, GOV-006, all STD specifications]
 decision_refs: [DI-057]
@@ -16,6 +16,12 @@ This is not event software, not CRM, not project management. **It is an Executiv
 
 ## 1a. The Overarching Principle (v1.1, DI-059)
 **Every interface should feel like a conversation with a highly competent executive, even when no chat window is present.** Every surface therefore answers, before the user asks: *What is happening? Why does it matter? What do you recommend? What happens if I approve? What are the risks? What evidence supports this?* A screen that cannot answer those six is not finished.
+
+## 1c. The Executive Interaction Hierarchy (v1.2, DI-060 — governs every surface)
+Every screen, regardless of capability, presents in the same order: **1. Situation** (what is happening) → **2. Recommendation** (what should I do) → **3. Evidence** (why) → **4. Actions** (what can I do right now) → **5. Detail** (everything else). The consistency becomes subconscious; users always know where to look first. Normative examples: *Approval Inbox* — "47 guests have not responded" / "Send the second reminder" / "RSVP response has slowed below the expected curve" / Approve · Delay · Review / guest list, timeline, history. *Creative Studio* — "Invitation assets are complete" / "Classic Emerald best matches the venue palette" / "Based on invitation artwork, floral selections, venue lighting" / Generate · Refine · Compare / typography, animation, export. *Engineering Intelligence* — "Authentication is ready for review" / "Merge after resolving one audit-logging issue" / "97% of security checks pass; one endpoint bypasses the audit trail" / Merge · Request changes · Open diff / files, tests, metrics.
+
+## 1d. The Analysis Rule (v1.2, DI-060 — permanent, category-defining)
+**The interface never asks a human to analyse information the Executive Intelligence can analyse itself.** Never a table of 2,000 guests with "find the problems"; never 40 logs inviting pattern-inference; never 300 telemetry events awaiting manual diagnosis. The system does the analysis and presents what matters, why it matters, what it recommends, and the evidence. **Humans exercise judgement; they do not perform data mining.** This is the category distinction: traditional SaaS says *here is your data*; AI wrappers say *ask me about your data*; the Executive Intelligence continuously analyses the estate, surfaces what matters, explains why, recommends, executes what it is authorized to execute, and asks for human judgement only where governance requires it.
 
 ## 1b. Universality (v1.1)
 This specification is the product application of the **Maison Doclar Experience System** and governs **every** human interaction with the Executive Intelligence across the estate — Executive Dashboard, Mission Workspace, Guest, Communications, Event Day, Creative Studio, Commission Studio, Vendor, Analytics, Engineering Intelligence, mobile, guest-facing, and host experiences alike. The user always feels they are interacting with **one intelligence, not different products**: recommendations look identical whether approving seating, designing invitations, reviewing suppliers, or deploying software; the interaction pattern is everywhere **Intent → Recommendation → Human refinement → Approval**; and the AI's personality is one voice — the same executive assistant generating a microsite, reviewing a seating plan, composing an email, analysing guest data, or proposing a code change. Creative surfaces lead with intent, never raw controls ("Create an elegant save-the-date · 250 guests · timeless luxury" before any canvas-size field — refinement follows generation). Engineering Intelligence reviews render in the same grammar as everything else: overall confidence, observations, recommendation, evidence — never a raw static-analysis dump. Creative Studio must never feel like a separate application; it feels like *asking your Executive Intelligence to create something*.
