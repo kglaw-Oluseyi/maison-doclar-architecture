@@ -267,10 +267,10 @@ The estate improves itself, within constitutional authority: **Engineering Intel
 | **Current slice** | Slice 4 ✅ complete · next: Situation synthesis (DI-053 step 3) |
 | **Current capability focus** | C25 Mission Runtime (built, L0–L1) · C2 Guest (built, in-memory + Pg) |
 | **Open human decisions** | ① Founder session — MPS v1.0 + RSVP ruling + MXS authoring (gates 3 specs, Phase A) ② CTR-I1 (gates Phase C) ③ Spec dispositions: STD-002/006/007/008/009/010/011/012, ARCH-003 v1.2 ④ Read-only transitions (4 repos) on named instruction |
-| **Current blockers** | Credential rotation pending (DI-064 two-identity model; handover PAT exposed, Workflows scope unverified) · Railway project not created · Neon DATABASE_URL not supplied · **API has no authentication — public routing withheld until it lands (DI-064)** |
-| **Next Cursor prompt** | Slice 5: API authentication (local, unblocked) → Railway private deploy + Neon cutover on founder inputs → enable public routing → Situation synthesis (DI-064/DI-065) |
-| **Recently completed** | Substrate (7 pkgs) · Mission Runtime · Guest domain · Persistence (4 schemas, DB-enforced constitution) · Execution API live-verified · GOV-009 handover · EIX frozen · DI-061 architecture closed |
-| **Implementation progress** | 4/4 Phase-A slices · 16/16 tests · tsc clean · 8 platform commits |
+| **Current blockers** | Credential rotation pending (DI-064 two-identity model; handover PAT exposed, Workflows scope unverified) · Railway project not created · Neon DATABASE_URL not supplied · Public routing withheld until authenticated service is deployed and verified live (DI-064) |
+| **Next Cursor prompt** | Railway private deploy + Neon cutover (awaiting founder inputs: tokens, Neon identity, Railway CLI auth) → enable public routing → Situation synthesis |
+| **Recently completed** | **Slice 5: API authentication (93c0078, ICAA-verified independently: two-run 21/21 + row inspection)** · Substrate (7 pkgs) · Mission Runtime · Guest domain · Persistence · Execution API live-verified · GOV-009 handover · EIX frozen |
+| **Implementation progress** | 5 slices (Phase A 4/4 + authentication) · 21/21 tests, two-run green independently reproduced · tsc clean · 9 platform commits |
 | **Autonomy progress** | Everything L0–L1 · closureRate telemetry live (AMM evidence primitive) |
 | **Specifications** | 1 ratified (STD-001) · 8 drafts · 3 frozen · MPS v1.0 in founder review |
 | **Deployment status** | Local: verified end-to-end · Railway: not created · Neon: provisioned ◻unconfirmed · CI: authored, push blocked |
