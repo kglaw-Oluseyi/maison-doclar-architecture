@@ -267,8 +267,8 @@ The estate improves itself, within constitutional authority: **Engineering Intel
 | **Current slice** | Slice 4 ✅ complete · next: Situation synthesis (DI-053 step 3) |
 | **Current capability focus** | C25 Mission Runtime (built, L0–L1) · C2 Guest (built, in-memory + Pg) |
 | **Open human decisions** | ① Founder session — MPS v1.0 + RSVP ruling + MXS authoring (gates 3 specs, Phase A) ② CTR-I1 (gates Phase C) ③ Spec dispositions: STD-002/006/007/008/009/010/011/012, ARCH-003 v1.2 ④ Read-only transitions (4 repos) on named instruction |
-| **Current blockers** | PAT lacks Workflows scope (CI commit held locally) · Railway project not created · Neon DATABASE_URL not supplied · **API has no authentication (pre-exposure requirement)** |
-| **Next Cursor prompt** | Railway + Neon cutover → then API authentication → then Situation synthesis |
+| **Current blockers** | Credential rotation pending (DI-064 two-identity model; handover PAT exposed, Workflows scope unverified) · Railway project not created · Neon DATABASE_URL not supplied · **API has no authentication — public routing withheld until it lands (DI-064)** |
+| **Next Cursor prompt** | Railway private deploy + Neon cutover → verify internally → API authentication → enable public routing → Situation synthesis (DI-064 sequencing) |
 | **Recently completed** | Substrate (7 pkgs) · Mission Runtime · Guest domain · Persistence (4 schemas, DB-enforced constitution) · Execution API live-verified · GOV-009 handover · EIX frozen · DI-061 architecture closed |
 | **Implementation progress** | 4/4 Phase-A slices · 16/16 tests · tsc clean · 8 platform commits |
 | **Autonomy progress** | Everything L0–L1 · closureRate telemetry live (AMM evidence primitive) |
