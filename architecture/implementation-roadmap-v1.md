@@ -1,0 +1,27 @@
+---
+artifact_id: ARCH-003
+name: Implementation Roadmap v1 — the realization backbone
+version: "1.0-draft"
+status: Draft — review pending
+effective_date: 2026-07-11
+depends_on: [ARCH-001, ARCH-002, AMM-001, GOV-005, GOV-006, all STD specifications]
+decision_refs: [DI-039, DI-043, DI-045, DI-046]
+---
+# Implementation Roadmap v1 (ARCH-003)
+Phases, not sprints; **dependency waves sequenced by autonomy maturity**, not features. Every capability knows where it is going (AMM level per GOV-006) and what must exist before it may climb (AMM-001 v1.1 evidence gates). Goals (DI-045) are the planning vocabulary throughout: each phase states what a human director can *intend* at its close.
+
+## Phase A — Foundation (no business features)
+Builds: C17 identity service + kernel client; kernel packages (storage, delivery adapters, worker harness, observability with end-to-end request IDs, config); contracts realized as code (CON-001/STD-008 envelope types + version negotiation, STD-009 message types); execution + intelligence database provisioning (two stores, never joined — DI-012); MPS/MXS consumed as versioned packages (publication-gated); C16 registry service (registration-only migration can start estate-wide immediately). Exit: a deployable two-plane skeleton where a request can carry an ID from surface → advisory → DecisionRecord. Autonomy: L0 everywhere by definition. **Gates: MPS v1.0 published (founder session); STD-002/006/007/008 Ready for Build.**
+## Phase B — Operational Core (manual operation, no autonomy)
+Builds, in dependency order from the matrices: guest-data module (STD-002) → communications (STD-006) → access (STD-011) + event-day runtime (STD-007) → seating (STD-001, greedy engine as CTR-S1 constructor) → guest experience (STD-010) → reporting (STD-012); Commission contract live against existing Studios systems (STD-009). Exit: one real event operable end-to-end on the Platform at **L0–L1**, Signature untouched. Director intent expressible: *"run this event manually on the Platform."*
+## Phase C — Assisted Intelligence (operator-driven, advice-rich)
+Builds: Knowledge Store + first declared pipelines (comms ledger, event-day lessons, guest facts); first producers behind STD-008 — send-time, seating priors, Vendor Intelligence (Venari donor, advice-only per its permanent floor), APE v0 (priors-only, honest uncertainty); DecisionRecord capture at every accept/reject surface; C24 store live (register migrated in). Exit: **L1 broadly; evidence accumulation begins** — the telemetry that AMM promotions will later cite. Gate: CTR-I1 ruled (P-4 enforcement precedes fact flow).
+## Phase D — Policy Automation (execute-with-approval)
+Promotes by evidence, capability by capability: drafted communications, seating proposals, vendor shortlists, schedule adjustments — prepared autonomously, executed on human approval (**L2**). First policy envelopes ratified (budgets, fatigue caps, protocol gates) for early **L3** candidates: import/dedup by policy, fanout operations, report generation (dispatch still human). Every promotion a register entry citing telemetry. Permanent floors enforced mechanically from day one of this phase.
+## Phase E — Supervised Autonomy (long-running plans)
+Requires: **C25 Mission Planning chartered through the constitutional process** (its precondition — "existing capabilities sufficiently specified" — is met at this phase's gate) with the Goal primitive as its backbone; Goals decompose into capability objectives (the ARCH-002 interfaces), monitored continuously, exceptions and approvals human. Capabilities at **L3, orchestration at L4-entry**. Director intent expressible: *"achieve 95% RSVP by the 1st; finalize seating by the 15th; all media before the 20th."*
+## Phase F — Autonomous Event OS
+The ARCH-002 end state: one human director, many autonomous agents, governance enforced — MPS authoritative, MKC governing, floors intact, every action DecisionRecord-closed. Reached only through accumulated AMM evidence; never scheduled by date.
+
+## Cross-phase rules
+Alakija wall (DI-018) precedes everything operational. Signature divergence managed per quarter throughout; Signature gains advice consumption (DI-015) in Phase C at the earliest. Corpus extraction and founder elicitation run continuously beside all phases. The constitutional-growth signal (DI-045) is reviewed at each phase gate. Each phase closes with a register entry recording what was earned, not just built.

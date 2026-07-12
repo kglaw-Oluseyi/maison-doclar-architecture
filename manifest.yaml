@@ -21,6 +21,7 @@ artifacts:
   - {id: STD-012, name: REPORTING-SPEC, path: architecture/specifications/STD-012-reporting-specification.md, version: "1.0-draft", status: Draft}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
   - {id: AMM-001, name: AUTONOMY-MATURITY-MODEL, path: architecture/AMM-001-autonomy-maturity-model.md, version: "1.0", status: Ratified-guide}
+  - {id: ARCH-003, name: IMPLEMENTATION-ROADMAP-V1, path: architecture/implementation-roadmap-v1.md, version: "1.0-draft", status: Draft}
   - {id: ARCH-002, name: AUTONOMOUS-EVENT-OS-VISION, path: architecture/autonomous-event-os-vision.md, version: "1.0", status: Ratified-lens}
   - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
   - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
