@@ -21,6 +21,8 @@ artifacts:
   - {id: STD-012, name: REPORTING-SPEC, path: architecture/specifications/STD-012-reporting-specification.md, version: "1.0-draft", status: Draft}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
   - {id: AMM-001, name: AUTONOMY-MATURITY-MODEL, path: architecture/AMM-001-autonomy-maturity-model.md, version: "1.0", status: Ratified-guide}
+  - {id: ARCH-004, name: EXECUTIVE-INTELLIGENCE-VISION, path: architecture/ARCH-004-executive-intelligence-vision.md, version: "1.0", status: Ratified-north-star}
+  - {id: GOV-007, name: ALIGNMENT-REPORT-ARCH-004, path: governance/GOV-007-alignment-report-arch-004.md, version: "1.0", status: Report}
   - {id: ARCH-003, name: IMPLEMENTATION-ROADMAP-V1, path: architecture/implementation-roadmap-v1.md, version: "1.0-draft", status: Draft}
   - {id: ARCH-002, name: AUTONOMOUS-EVENT-OS-VISION, path: architecture/autonomous-event-os-vision.md, version: "1.0", status: Ratified-lens}
   - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
