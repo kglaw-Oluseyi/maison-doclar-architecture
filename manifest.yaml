@@ -19,6 +19,7 @@ artifacts:
   - {id: STD-010, name: GUEST-EXPERIENCE-SPEC, path: architecture/specifications/STD-010-guest-experience-specification.md, version: "1.0-draft", status: Draft}
   - {id: STD-011, name: ACCESS-SPEC, path: architecture/specifications/STD-011-access-specification.md, version: "1.0-draft", status: Draft}
   - {id: STD-012, name: REPORTING-SPEC, path: architecture/specifications/STD-012-reporting-specification.md, version: "1.0-draft", status: Draft}
+  - {id: GOV-010, name: HANDOVER-001, path: governance/HANDOVER-001.md, version: "1.0", status: Permanent-onboarding}
   - {id: GOV-009, name: HANDOVER-INVENTORY, path: governance/GOV-009-handover-inventory.md, version: "1.0", status: Ratified-operational}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
   - {id: AMM-001, name: AUTONOMY-MATURITY-MODEL, path: architecture/AMM-001-autonomy-maturity-model.md, version: "1.0", status: Ratified-guide}
