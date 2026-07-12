@@ -2,7 +2,7 @@
 # SCHEMA: v1.0 — FROZEN (DI-022). Changes to this schema or to artifact front-matter fields are
 # constitutional changes requiring a Decision Register entry.
 # IDENTIFIERS (DI-023): artifacts carry permanent stable IDs; file paths may change, IDs never do.
-#   Prefixes: MPS- MXS- MKC- CAP- STD- ARCH- GOV- CON- KNW- DI- AMM- (AMM- added per DI-043)
+#   Prefixes: MPS- MXS- MKC- CAP- STD- ARCH- GOV- CON- KNW- DI- AMM- EIX- (AMM- per DI-043; EIX- per DI-057)
 # Precedence order for conflicting statements (DI-020):
 #   1. /constitution  2. /governance  3. /knowledge (current)  4. /architecture/standards  5. /architecture/deliverables (historical)
 artifacts:
@@ -22,6 +22,8 @@ artifacts:
   - {id: GOV-009, name: HANDOVER-INVENTORY, path: governance/GOV-009-handover-inventory.md, version: "1.0", status: Ratified-operational}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
   - {id: AMM-001, name: AUTONOMY-MATURITY-MODEL, path: architecture/AMM-001-autonomy-maturity-model.md, version: "1.0", status: Ratified-guide}
+  - {id: EIX-001, name: EXPERIENCE-SPECIFICATION, path: architecture/EIX-001-executive-intelligence-experience-specification.md, version: "1.0", status: Ratified-experience-reference}
+  - {id: EIX-002, name: SURFACE-MAP-V1, path: architecture/EIX-002-surface-map-v1.md, version: "1.0", status: Ratified-companion}
   - {id: ARCH-005, name: EXECUTIVE-INTELLIGENCE-ARCHITECTURE, path: architecture/ARCH-005-executive-intelligence-architecture.md, version: "1.0", status: Ratified-lens-final}
   - {id: ARCH-004, name: EXECUTIVE-INTELLIGENCE-VISION, path: architecture/ARCH-004-executive-intelligence-vision.md, version: "1.0", status: Ratified-north-star}
   - {id: GOV-007, name: ALIGNMENT-REPORT-ARCH-004, path: governance/GOV-007-alignment-report-arch-004.md, version: "1.0", status: Report}
