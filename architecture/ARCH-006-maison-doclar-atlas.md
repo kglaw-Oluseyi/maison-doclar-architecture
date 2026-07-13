@@ -258,20 +258,23 @@ The estate improves itself, within constitutional authority: **Engineering Intel
 ---
 
 # 📍 LIVING DASHBOARD — the one page that always tells you where we are
-*(update on every advance — DI-062 obligation)*
+*(update on every advance — DI-062 obligation. Refreshed 13 July 2026 by direct verification (Tier 1) after a full harmony reconciliation — DI-084 — following a multi-session gap. Prior versions of this table had drifted into internal self-contradiction; every field below is either directly verified today or explicitly marked otherwise.)*
 
 | | |
 |---|---|
-| **Current phase** | Phase A — Platform Foundation (Roadmap v1.2) |
-| **Current milestone** | Deployability (DI-054) — code complete, awaiting Railway + Neon |
-| **Current slice** | Slice 4 ✅ complete · next: Situation synthesis (DI-053 step 3) |
-| **Current capability focus** | C25 Mission Runtime (built, L0–L1) · C2 Guest (built, in-memory + Pg) |
-| **Open human decisions** | ① Founder session — MPS v1.0 + RSVP ruling + MXS authoring (gates 3 specs, Phase A) ② CTR-I1 (gates Phase C) ③ Spec dispositions: STD-002/006/007/008/009/010/011/012, ARCH-003 v1.2 ④ Read-only transitions (4 repos) on named instruction |
-| **Current blockers** | Credential rotation: resolved (DI-068/069/070/071) · Railway/Neon live since Slice 6 · CTO PAT missing Actions:read (open, not blocking) · MPS v1.0 founder session (open, CTO-owned, not re-flagged by ICAA per standing instruction) · Minor debt: malformed /missions body returns 500 not 400 (open, non-urgent, found during Slice 15 review) |
-| **Next Cursor prompt** | None scoped — Slice 17 (status-lifecycle transition rules) explicitly held as named-but-unscoped per CTO disposition; no concrete need yet since nothing reads status for a decision. Awaiting next priority. |
-| **Recently completed** | **Slice 16: event_revisions append-only audit trail + event.manage/event.read.audit split (a783f8ae, Tier-1 ICAA-verified: impersonation row-checked, dual-actor read/audit split live-tested, direct tamper attempt personally rejected)** · Slice 15: formal Event create/read, ensureEvent removed · Slice 14: Event primitive/DI-072 closed · Slices 11-13: guest HTTP surface complete, cross-Event isolation, DI-073 · Slices 1-10: substrate through first read-side authority gate |
-| **Implementation progress** | 16 slices · 80/80 tests, two-run green independently reproduced every slice · tsc clean · Guest and Event domains structurally consistent (create/revise/read/audit, PII+audit-read splits) · DI-052 steps 1-4 closed · DI-072 closed |
-| **Autonomy progress** | Everything L0–L1 · closureRate telemetry live (AMM evidence primitive) |
-| **Specifications** | 1 ratified (STD-001) · 8 drafts · 3 frozen · MPS v1.0 in founder review |
-| **Deployment status** | Local: verified end-to-end · Railway: not created · Neon: provisioned ◻unconfirmed · CI: authored, push blocked |
-| **Experience status** | EIX-001 v1.2 FROZEN · EIX-002 mapped (16 surfaces) · 0 surfaces built · first: S4 |
+| **Current phase** | Phase A — Platform Foundation, in progress. Authentication, event domain, guest domain, and the World-Class Standard scorecard are built; department expansion (comms/seating/event-day) not yet started. |
+| **Current milestone** | STD-WC remediation: 23 silent-catch sites (WC-1.2) and 5 devDependency vulnerabilities (WC-4.2) — both found, both logged, neither fixed (DI-082) |
+| **Current slice** | 18 slices landed (Slice 1 → Slice 18; Slice 6 was infrastructure/deploy, no dedicated test file). 96/96 tests passing, `tsc -b` clean — directly verified 13 July 2026, not carried forward from a prior claim. |
+| **Current capability focus** | Guest domain (Slices 3, 11–13, structurally complete: create/revise/read/audit split) · Event primitive (Slices 14–16, FK-enforced, append-only revisions) · Mission Runtime with Observations (Slice 7) and experimental Situation synthesis (Slice 8, deliberately unchartered per DI-052) · STD-WC Scorecard (Slice 18) |
+| **Open human decisions** | ① MPS/MXS charter status — substantial content ratified piecemeal (DI-076–078) but charter documents still read `Draft`; single comprehensive ratification pass vs. incremental — founder call (DI-084d) ② CTR-I1 (unchanged, still open) ③ Branch-protection gap (DI-079) — GitHub plan-tier decision, founder's to make ④ Urbanac/estate credential separation (DI-064) — recommended, not yet actioned ⑤ STD-002/006/007/008/009/010/011/012 formal dispositions — largely overtaken by direct implementation and founder rulings since; a formal pass would mostly be paperwork catching up to reality at this point |
+| **Current blockers** | None blocking. Two open remediation items (23 silent catches, 5 audit findings) — both non-urgent per DI-082, both the named next Cursor prompt. |
+| **Next Cursor prompt** | Silent-failure remediation (WC-1.2): triage the 23 flagged `catch` sites in `packages/persistence`, `modules/guest-data`, and `apps/execution/src/server.ts`; add the missing throw/log/reject signal or record why current behaviour is correct, site by site. |
+| **Recently completed** | Slice 18: STD-WC Scorecard, full 48-threshold taxonomy, CI-wired, not yet build-gating (DI-081) · Slice 16: Event append-only revision audit trail · Slices 14–15: Event formalized as first-class entity with FKs, closing DI-072 · Slice 8–9: experimental Situation synthesis composed into Mission Health · Slice 5: real bearer-token authentication (closes the HANDOVER-001 pre-exposure gap) |
+| **Implementation progress** | 18 slices · 96/96 tests (two-run green independently reproduced this session) · `tsc -b` clean · Guest and Event domains structurally consistent (create/revise/read/audit, PII+audit-read splits) · authentication live · STD-WC scorecard operational |
+| **Autonomy progress** | Everything L0–L1. `closureRate` telemetry live (AMM evidence primitive) — no promotion to L2+ has occurred or been claimed. |
+| **Specifications** | 2 ratified (STD-001, STD-WC) · 8 drafts · 3 frozen · MPS/MXS charters still `Draft` status despite substantial ratified content within them (see Open human decisions ①) |
+| **Deployment status** | Railway + Neon live since Slice 6 (per DI-084 reconciliation of prior conflicting dashboard text) · CI running on every push, typecheck + full suite + STD-WC scorecard artifact publication · local verification (this session) confirms the same green state CI reports |
+| **Experience status** | EIX-001 v1.2 FROZEN · EIX-002 mapped (16 surfaces) · 0 surfaces built · S4 (Approval Inbox) remains the recommended first surface |
+
+---
+*This document is a living atlas: every capability implementation, specification ratification, or roadmap advance updates its relevant diagrams and this dashboard. It is the first artifact any future engineer, architect, investor, or AI instance should read. As of this refresh (DI-084), every field above was directly verified rather than carried forward — the standing practice this reconciliation restores.*
