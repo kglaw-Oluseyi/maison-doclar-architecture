@@ -46,3 +46,4 @@ artifacts:
   - {id: KNW-002, name: NEGATIVE-KNOWLEDGE,  path: knowledge/negative-knowledge.md,        version: living, status: Ratified}
   - {id: KNW-003, name: FOSSILS,             path: knowledge/fossils.md,                   version: living, status: Ratified}
   - {id: KNW-004, name: HUMAN-KNOWLEDGE,     path: knowledge/human-knowledge-assets.md,    version: living, status: Ratified}
+  - {id: VISION-001, name: ESTATE-AND-EI-VISION, path: architecture/VISION-001-estate-and-executive-intelligence.md, version: "1.0", status: Ratified}
