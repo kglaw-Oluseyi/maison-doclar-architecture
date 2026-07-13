@@ -23,5 +23,5 @@ Titles and address forms · precedence rules · household composition grammar ·
 4. **Aperture guest-trust & seating politics** (`maison-doclar-aperture/lib/guest-trust/`, `lib/seating/`) — trust checklist, relationship tag presets, tier handling in allocation rules.
 5. **Founder register** (Human Knowledge Assets, declarative category) — elicited rules, marked Founder-authored until verified.
 
-## Confidence vocabulary (per ICAA ruling)
-`Founder-authored` → `Founder-verified` → `Constitutionally ratified`. "Canonical" is reserved for ratified content only.
+## Confidence vocabulary (per ICAA ruling; extended per DI-077)
+`Founder-authored` → `Founder-verified` → **`Directive-adopted`** → `Constitutionally ratified`. `Directive-adopted`: content sourced externally (research, not elicited from the founder's own knowledge), reviewed by the founder, and explicitly directed into use — distinct from `Founder-authored` (his own knowledge) and `Founder-verified` (his confirmation against his own knowledge). "Canonical" is reserved for ratified content only.
