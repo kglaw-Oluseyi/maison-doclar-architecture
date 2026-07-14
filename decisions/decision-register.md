@@ -352,3 +352,11 @@ Accepted in full. Status: Seating Phase 4B closed. **The allocator is now genuin
 **Deferred, not authorized, requiring its own future decision if ever wanted**: N10 Table Drain + f_fill + the attendance-probability prerequisite (STD-003 §7) as one bundled future scope, separate from "completing Seating" as currently understood.
 
 Status: N5-N8 ratified and issued; N11+restart queued behind it; N10 honestly deferred as blocked rather than silently dropped.
+
+**DI-110 · Seating Phase 4, Sub-slices C1 and C2 authorized — the remaining pieces of the frozen design.** 14 July 2026. Founder-directed, pushing through to the complete design. Splits the deferred "sub-slice C" from DI-106 further, matching the A/B pattern that has worked well: neighborhoods first, strategy layered on second.
+
+**C1 (authorized now, Cursor prompt issued): cluster-level neighborhoods N5–N8** — Move Cluster (chunk relocation), Swap Clusters, Split Cluster (re-chunk, never applicable to MUST/H7 per D2), Merge Cluster (reunification, watch-list-driven). Wired into the existing weighted move-selection framework from sub-slice B, extending it from {N1-N4} to {N1-N8}.
+
+**C2 (not yet authorized, follows once C1 is accepted): the diversification/escape layer** — N10 (table drain, serving f_fill), N11 (ruin-and-recreate bursts), and the soft restart strategy. These three share dependency on being able to reconstruct sub-instances or reorder construction, and are conceptually one unit (all answer "what does the annealer do when it's stuck," not "what new move exists").
+
+Once both land, Seating fully realizes the frozen Algorithm Design Specification (STD-004) as written. Status: C1 ratified and issued; C2 queued.
