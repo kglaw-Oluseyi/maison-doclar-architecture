@@ -326,3 +326,11 @@ Accepted in full. Status: Seating Phase 3 (Repair) closed. Only Improvement/anne
 **Sub-slice C (not yet authorized, deferred): the remaining neighborhoods** — N5–N8 (cluster/chunk-level moves), N10 (table drain), N11 (ruin-and-recreate diversification) — enhancements layered onto sub-slice B's working annealer.
 
 Status: sub-slice A ratified and issued; B and C queued, each requiring its own authorization once the prior sub-slice is reviewed and accepted, per standing practice.
+
+**DI-107 · ICAA review: Seating Phase 4A (N1–N4 core moves, DI-106) accepted on independently verified evidence.** 14 July 2026. Both commits (`4c44332`, `dbba65f`) confirmed on remote main; build clean; suite re-run independently 5 times — 123/123 every run, matching the report exactly.
+
+**Code inspected directly**, particularly N2's mutual-term correction (the piece flagged in the authorizing prompt as most likely to be subtly wrong): the proposal structure exposes `n1DeltaA`, `n1DeltaB`, `mutualAtBase`, `mutualAtSwap`, and `mutualCorrection` as separately tracked quantities, not collapsed into an opaque final number — matching the report's hand-computed breakdown and the system's general explainability discipline. Indivisibility checking reuses `atomicUnitAtTable` from `repair.ts` (no duplicated logic) and is **extended beyond the minimum spec** to also protect larger intact households (3+ members all co-located) from being silently broken by a singleton move, not just MUST components and H7 pairs — a reasonable, cautious extension found on inspection, not requested.
+
+Accepted in full. Status: Seating Phase 4A closed. Sub-slice B (the annealing driver — temperature, Metropolis acceptance, tabu, budgets, operating over these four neighborhoods) is next; Cursor prompt to follow.
+
+*(Minor, non-substantive: the report's raw text again ended with a stray "20 x 19" fragment, as seen once before in an earlier submission — consistent with a terminal-dimension or paste artifact from Cursor's environment, not anything affecting the reviewed work. Noted for the second time per standing practice of flagging recurring oddities; not investigated further absent any actual effect.)*
