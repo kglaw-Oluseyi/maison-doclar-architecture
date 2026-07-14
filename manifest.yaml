@@ -34,7 +34,7 @@ artifacts:
   - {id: ARCH-003, name: IMPLEMENTATION-ROADMAP-V1, path: architecture/implementation-roadmap-v1.md, version: "1.0-draft", status: Draft}
   - {id: ARCH-002, name: AUTONOMOUS-EVENT-OS-VISION, path: architecture/autonomous-event-os-vision.md, version: "1.0", status: Ratified-lens}
   - {id: ARCH-001, name: ARCHITECTURE-FREEZE, path: governance/architecture-freeze.md, version: "1.0", status: Ratified}
-  - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "0.1", status: Draft}
+  - {id: MPS-001, name: MPS,                 path: constitution/MPS/README.md,             version: "1.0", status: Ratified}
   - {id: MXS-001, name: MXS,                 path: constitution/MXS/README.md,             version: "0.1", status: Draft}
   - {id: MKC-001, name: MKC,                 path: constitution/MKC/README.md,             version: "0.1", status: Ratified-outline}
   - {id: CAP-001, name: CAP-CATALOGUE,       path: capabilities/catalogue.md,              version: "1.0", status: Ratified}
@@ -47,3 +47,4 @@ artifacts:
   - {id: KNW-003, name: FOSSILS,             path: knowledge/fossils.md,                   version: living, status: Ratified}
   - {id: KNW-004, name: HUMAN-KNOWLEDGE,     path: knowledge/human-knowledge-assets.md,    version: living, status: Ratified}
   - {id: VISION-001, name: ESTATE-AND-EI-VISION, path: architecture/VISION-001-estate-and-executive-intelligence.md, version: "1.0", status: Ratified}
+
