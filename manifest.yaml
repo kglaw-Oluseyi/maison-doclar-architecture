@@ -21,6 +21,7 @@ artifacts:
   - {id: STD-012, name: REPORTING-SPEC, path: architecture/specifications/STD-012-reporting-specification.md, version: "1.0-draft", status: Draft}
   - {id: STD-WC, name: WORLD-CLASS-STANDARD, path: architecture/specifications/STD-WC-world-class-standard.md, version: "1.0", status: Ratified}
   - {id: GOV-011, name: STD-WC-SCORECARD, path: "maison-platform:packages/scorecard (see DI-081)", version: living, status: Ratified-operational}
+  - {id: GOV-012, name: HANDOVER-002, path: governance/HANDOVER-002.md, version: "1.0", status: Permanent-onboarding}
   - {id: GOV-010, name: HANDOVER-001, path: governance/HANDOVER-001.md, version: "1.0", status: Permanent-onboarding}
   - {id: GOV-009, name: HANDOVER-INVENTORY, path: governance/GOV-009-handover-inventory.md, version: "1.0", status: Ratified-operational}
   - {id: GOV-006, name: CAPABILITY-COVERAGE-REVIEW, path: governance/capability-coverage-review.md, version: "1.0", status: Ratified-pending-review}
