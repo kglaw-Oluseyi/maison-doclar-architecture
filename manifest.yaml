@@ -19,6 +19,8 @@ artifacts:
   - {id: STD-010, name: GUEST-EXPERIENCE-SPEC, path: architecture/specifications/STD-010-guest-experience-specification.md, version: "1.0-draft", status: Draft}
   - {id: STD-011, name: ACCESS-SPEC, path: architecture/specifications/STD-011-access-specification.md, version: "1.0-draft", status: Draft}
   - {id: STD-012, name: REPORTING-SPEC, path: architecture/specifications/STD-012-reporting-specification.md, version: "1.0-draft", status: Draft}
+  - {id: STD-013, name: GUEST-KNOWLEDGE-GRAPH-HOST-INTENT, path: architecture/specifications/STD-013-guest-knowledge-graph-host-intent-intelligence.md, version: "1.1", status: Ratified}
+  - {id: STD-014, name: DECISION-SIMULATION-ENGINE, path: architecture/specifications/STD-014-decision-simulation-engine.md, version: "1.0", status: Ratified}
   - {id: STD-WC, name: WORLD-CLASS-STANDARD, path: architecture/specifications/STD-WC-world-class-standard.md, version: "1.0", status: Ratified}
   - {id: GOV-011, name: STD-WC-SCORECARD, path: "maison-platform:packages/scorecard (see DI-081)", version: living, status: Ratified-operational}
   - {id: GOV-012, name: HANDOVER-002, path: governance/HANDOVER-002.md, version: "1.0", status: Permanent-onboarding}
