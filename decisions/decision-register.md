@@ -618,3 +618,34 @@ Per the Architecture-First Gate and HANDOVER-002's explicit rule (do not resolve
 ---
 
 **Note on logging discipline (applies to DI-129–134):** these six entries were written and filed together, after the fact, rather than one at a time as each fix was authorized and verified — a real deviation from this programme's standing rule that trade-offs are logged the moment they're made. DI-127 already recorded the arc's outcome in summary; these entries restore the individual-decision granularity the rest of the register maintains, so a future reader can find the specific evidence, proof, and verification behind each fix without depending on chat history that isn't part of the durable record.
+
+---
+
+**DI-135 · Seating residual remediation arc (S1–S4) ratified as STD-004 conformance work — not a specification amendment; DI-127 pause lifted for this scoped arc only.** 21 July 2026. Founder-ratified.
+
+**Situation:** DI-127 paused the DI-121/122 performance-hardening arc after Slice 49 (`c4045ee`), with STD-004 §9 unmet at every scale and the next bottleneck named as residual per-proposal cost inside already-incremental `propose*` / `SearchState` machinery. Independent review (ICAA) established that the remaining defects contradict frozen STD-004 as already written — §7 ("preconditions checked before any move enters acceptance"; "single-move feasibility is O(1) with maintained state"), Phase 0 rationale ("evaluate feasibility and score deltas in near-constant time"), the invariants section (I1–I4 by move preconditions; full rederivation is sampled debug-mode; full V1 sweep is the Phase 4 gate only), and §9 (per-proposal ~1–3µs including selection, feasibility, delta, bookkeeping) — and are therefore conformance defects, not grounds to amend the frozen specification.
+
+**Decision:** authorize the seating residual remediation arc as four conformance slices against the frozen text (no STD-004 / STD-005 / other frozen-spec edits in this arc):
+
+- **S1 — incremental feasibility gate:** preconditions checked before a move enters acceptance, maintaining O(1) single-move feasibility with state (STD-004 §7 / Phase 0 / invariants).
+- **S2 — journaled in-place trial evaluation:** trial evaluation without full arrangement / cache clone on the hot path (STD-004 §7 / §9 bookkeeping bound).
+- **S3 — δ-scoped table-cache updates:** cache maintenance scoped to tables affected by the trial delta (STD-004 Phase 0 near-constant delta evaluation).
+- **S4 — candidate-set membership:** membership / candidate structures that keep selection inside the §9 per-proposal bound (STD-004 §9).
+
+**Sequencing (binding):** S1 → S2 → S3+S4, with full-sweep benchmark gates between slices. Sub-slice 0 (acceptance fixture, Slice-49 baseline measurement, this register pair) precedes S1 and changes no engine code under `modules/seating-domain/src/**`.
+
+**Relationship to DI-127:** DI-127's pause is lifted only for this residual arc as scoped here. It is not a blanket reopening of unrelated seating work, and it does not reclassify the 360-person-cluster locality question (see DI-136).
+
+**Status:** Ratified; sub-slice 0 authorized and in flight; S1–S4 implementation gated on sub-slice 0 completion and ICAA verification of the committed baseline.
+
+---
+
+**DI-136 · STD-005 §9 acceptance benchmarking measured on the realistic-household fixture; 360-person-cluster fixture reclassified as stress for the DI-127-paused locality question.** 21 July 2026. Founder-ratified; companion to DI-135.
+
+**Decision:** For STD-005 acceptance benchmarking against STD-004 §9 wall / per-proposal targets, the governing measurement surface is the **realistic-household fixture** (`maison-platform` `scripts/di-fixture-realistic-households.ts` / `buildRealisticScaleInput`): households of 1–8 guests (weighted toward 2–5), tag clusters capped at ≤ 2 tables' capacity, no household or cluster exceeding 24 guests, deterministic from seed, valid at 200 / 500 / 1,000 / 2,000 guests.
+
+**Reclassification:** The existing 360-person-cluster / large-cohesive-family fixture (`scripts/di120-large-cluster-fixture.ts` / `buildHonestScaleInput`) is **retained unmodified in behaviour** and re-labelled as the **stress fixture** for the many-table-household locality question that DI-127 explicitly paused. That locality question remains paused; stress-fixture results are diagnostic, not the §9 acceptance gate.
+
+**Baseline discipline:** Sub-slice 0 commits a Slice-49-code (`c4045ee`) baseline on the realistic fixture (`scripts/di-realistic-baseline-results.json`) and residual micro-decomposition on both fixtures (`scripts/icaa-residual-decomposition-results.json`) before any S1–S3 engine change. Subsequent residual slices gate on improvement against that realistic baseline.
+
+**Status:** Ratified; fixture and baseline surface binding for the residual arc.
