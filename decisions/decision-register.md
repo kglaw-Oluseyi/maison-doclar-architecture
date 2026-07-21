@@ -517,6 +517,8 @@ Status: resolved, binding, founder-authorised. DI-101/DI-102's deferral (Perimet
 
 **DI-127 · Seating's DI-121/122 performance-hardening arc paused, deliberately and explicitly, at the founder's direction — real, verified progress recorded; STD-004 §9's target not met at any scale.** 21 July 2026.
 
+*Individual fix-level entries (DI-129–134) added after this one, retroactively, restoring the per-decision granularity this summary compresses — see those entries for the specific defect, proof, fix, and independent verification behind each of the six items named below.*
+
 **What was fixed, each independently verified (rebuilt from source, tests re-run directly, not accepted on report alone) across this session:** the original DI-121 defect (full-objective re-evaluation per proposal) closed via incremental scoring (Slices 38–42); the resulting construct-phase and denominator-recomputation defects found and closed (Extensions 1/1b — 2,000-guest construction: 35-minute hang → ~100s); the anneal-phase move-enumeration defect closed, matching STD-004 §6's actual specified design (Extension 2); a locality-scan dependency-frontier defect closed with a proven, numerically-verified complexity-class improvement (Change A); a duplicate soft-term computation eliminated, proven safe by direct inspection of what the accept/reject decision actually reads (Change B); an unauthorized per-candidate decomposition (present since before this session, computing explanatory data STD-004 §8 itself says is a "debug/telemetry option, not part of the model's contract," with zero live consumers anywhere in the codebase) removed (Change C).
 
 **Where this leaves it, honestly, independently re-measured after every fix:** at 200 guests (the smallest tested scale), full-budget anneal wall time improved from ~164s (post-Extension-2) to a range of 41–77s across independent runs (Change C) — real, substantial, multiply-confirmed progress — against a STD-004 §9 target of under 1 second. No scale from 200 to 2,000 guests meets the standard. The report from the most recent fix (Change C) itself names the next, distinct, not-yet-investigated bottleneck: per-proposal cost inside the already-fast incremental machinery itself (`propose*`/`SearchState`), not enumeration or duplication.
@@ -532,3 +534,87 @@ Status: resolved, binding, founder-authorised. DI-101/DI-102's deferral (Perimet
 Per the Architecture-First Gate and HANDOVER-002's explicit rule (do not resolve an ambiguity or a standing condition your own way — surface it and get it resolved in writing): DI-102 conditioned Perimeter's build start on Seating being complete. DI-127 (this session) records Seating as deliberately paused, not complete. The founder has directed the CTO/ICAA to move to Perimeter next regardless. This entry records that the precondition is knowingly, explicitly overridden by founder direction — not silently waived, not reinterpreted as satisfied.
 
 **Status:** Precondition override acknowledged. Perimeter's actual build scoping (per DI-101's endorsed first-slice scope: perimeter module + Raw/Working/Candidate tiers + re-validating promotion gate + constrained guest-list grid) has not yet been authorized as a Cursor prompt — this entry only removes the sequencing blocker; it does not itself authorize implementation.
+
+**DI-129 · Seating Extension 1 — construct-phase incremental scoring — retroactively logged (work done and independently verified 21 July 2026, logged here after the fact; see the note on logging discipline at the end of this entry).**
+
+**Defect:** `objectiveDeltaForMembers` (construct.ts), called once per (candidate item, candidate table) pair during initial placement, computed its delta via a full double `evaluateObjective` call — a complete arrangement rescan, twice, for every candidate table considered. Made construction O(n²·m) against STD-004 §9's specified O(n·m·δ̄).
+
+**Fix:** rewrote `objectiveDeltaForMembers` to use the incremental delta machinery (Phase 5 sub-slices 1–2) instead of full recompute, extending the same multi-guest composition already proven for cluster moves.
+
+**Verification (independently reproduced by the ICAA, not accepted on report):** exact equality against the legacy dual-evaluateObjective path on every existing fixture; multi-item I6 cache-coherence sequences; 1,000-guest construction measured directly at ~156–183s (from a 35-minute hang) — real, substantial, confirmed improvement, though still far above STD-004 §9's ~3–6s target for that scale.
+
+**Status:** Accepted and merged (`maison-platform` Slice 44, commit `f7ea29f`).
+
+---
+
+**DI-130 · Seating Extension 1b — incremental household/tag denominators — retroactively logged.**
+
+**Defect, found while investigating why 1,000-guest construction (post DI-129) still ran ~30–50x slower than STD-004 §9's target:** `householdDen` and `tagDen` (the denominators the incremental HH/tag terms divide by) were recomputed from scratch on every single delta call — `householdDen` by scanning every household and checking every member's seat status (O(total guests) per call); `tagDen` by a full pairwise scan over every currently-seated guest (O(seated²) per call). Extension 1 had correctly made the *numerators* incremental but left these denominators as full-population rescans, defeating the intent of incremental scoring for exactly these two terms.
+
+**Fix:** maintained running totals — a per-household seated-member count and a per-tag seated-member count — updated by simple arithmetic on seat/unseat, replacing the from-scratch scans.
+
+**Verification:** I6 coherence (maintained totals vs. from-scratch derivation) after sequences of seat/unseat/move operations; independently reproduced timing — 1,000-guest construction: ~156s → ~11s; 2,000-guest construction: previously did not complete within a 300s wall (35-minute offline hang) → ~98–117s across independent runs, now reliably completing.
+
+**Status:** Accepted and merged (Slice 45, commit `8aff1ee`).
+
+---
+
+**DI-131 · Seating Extension 2 — anneal-phase move sampling redesign, matching STD-004 §6's actual specified design — retroactively logged.**
+
+**Defect:** the anneal loop's `enumerateN1`–`enumerateN8` fully re-enumerated every neighborhood's entire candidate pool on every single proposal — N2 specifically an O(n²) double loop over all singleton guest pairs, every round. This directly contradicted STD-004 §6's own specified design (a lightweight categorical draw over neighborhoods, then direct sampling from precomputed candidate lists) and §9's complexity bound (Phase 3 must be linear in proposal budget). The founder's own directive — investigate the defect directly, informed by how chess engines like Deep Blue achieve fast move evaluation (pruning; data shaped for speed in the hot path) — led to this diagnosis.
+
+**Fix:** implemented the design STD-004 §6 already specifies — categorical neighborhood draw, then direct random endpoint sampling with bounded retry, replacing full enumeration. Applied uniformly to N1–N6/N8; N7 confirmed already schedule-only, not part of the main draw; N10 confirmed absent (pre-existing, unbuilt, out of this scope).
+
+**A necessary, disclosed side effect:** this changes what trajectory a given random seed produces (the sampling mechanism is genuinely different), which is expected and correct — determinism (same seed ⇒ same trajectory) holds going forward, not against pre-existing seed histories.
+
+**Verification:** feasibility re-checked exhaustively against the new sampling approach; new fixed-seed trajectory tests established as the fresh baseline; full scale-sweep re-run and independently reproduced by the ICAA — 200 guests: anneal timeout (90s budget) → completes (~164–224s across runs, still far off the <1s target); all four scales (200/500/1,000/2,000) remained outside STD-004 §9's target after this fix alone, honestly reported rather than declared a win.
+
+**Status:** Accepted and merged (Slice 46, commit `f71ef8b`).
+
+---
+
+**DI-132 · Seating Change A — locality-delta dependency-frontier fix, with a proven complexity-class improvement — retroactively logged.**
+
+**Defect, found via phase-decomposed, instrumented benchmarking (not guessed) after Extension 2 alone proved insufficient:** `localitySumDelta` scanned every cluster in the entire event for every single-guest move evaluation, performing real per-cluster work even for clusters unrelated to the moving guest. Isolated at ~2,692µs of a ~5,519µs single-guest evaluation — the dominant cost.
+
+**Correctness proof, established before writing any fix:** a cluster's occupied-table set depends only on that cluster's own members' current table assignments; a guest outside a cluster cannot change its occupied-table set by moving. The complete, provably correct affected-cluster set for any single guest's move is exactly the clusters containing that guest — confirmed against cluster membership being a static, Phase-0 structural pretable, never mutated during search.
+
+**Fix:** a load-time `guestId → ClusterDef[]` index, built from the same canonical membership data the existing locality code already reads; `localitySumDelta` rewritten to iterate only the guest's own clusters.
+
+**Verification, independently reproduced by the ICAA:** exact-equality regression on every fixture (with one documented, justified floating-point-tolerance exception — IEEE associativity, `.toBeCloseTo(...,15)`, far tighter than this codebase's 1e-9 standard); a dedicated complexity-scaling benchmark (10/100/1,000/10,000 synthetic clusters) proving the old implementation's cost grows with total cluster count while the new implementation's stays flat — a genuine complexity-class change, independently reproduced with an even more pronounced ratio in the ICAA's own run.
+
+**Status:** Accepted and merged (Slice 47, commit `ababcf4`).
+
+---
+
+**DI-133 · Seating Change B — eliminated duplicate soft-term numerator computation — retroactively logged.**
+
+**Defect:** each of the seven soft scoring terms was computed twice per candidate evaluation — once via the weighted-delta path (used for the accept/reject decision) and once more via seven separate numerator-only functions redoing the identical underlying lookups, to populate `ScoreCache`'s running numerator totals.
+
+**Safety proof, established before writing any fix:** checked directly that the accept/reject decision reads only `ScoreCache.total`, computed purely from `softDelta`/`penaltyDelta` — never from the numerator fields. This confirmed the numerator computation could safely be produced as a byproduct of the same calculation that produces the weighted delta, rather than a second, separately-maintained computation.
+
+**Fix:** each term function now returns both its weighted delta and its already-computed numerator; the seven standalone numerator-only functions removed from the live evaluation path.
+
+**Verification, independently reproduced by the ICAA:** exact equality (six of seven terms strict; locality term at the same documented floating-point tolerance as Change A) between the byproduct numerator and the old separately-computed value; I6 cache-coherence sequences after this change; phase-decomposition re-measurement — single-guest evaluation cost, combined with Change A, fell from the original ~5,519µs to ~220–300µs across independent runs (an 18–25x improvement) — genuinely earned, independently confirmed, and still roughly 100–250x above STD-004 §9's target.
+
+**Status:** Accepted and merged (Slice 48, commit `7eb6b2e`).
+
+---
+
+**DI-134 · Seating Change C — removed an unauthorized per-candidate decomposition never part of STD-004's ratified explainability contract — retroactively logged. This is the entry that surfaced the arc's honest stopping point.**
+
+**Defect, found via real runtime instrumentation (temporary counters, added and removed) after the full anneal benchmark got *worse*, not better, following Changes A and B:** `n2DeltaDecomposition`/`n6DeltaDecomposition` (predating this session's entire diagnosis) unconditionally computed a seven-call mutual-interaction breakdown for every N2/N6 candidate — 8 `simulateGuestMoveSequence` calls per swap, confirmed by direct instrumentation, not estimation. Change B's small per-call overhead, negligible once, was being paid 8–9 times per candidate instead of once, compounding across the search.
+
+**Algebraic and empirical proof, established before writing any fix:** `n2DeltaDecomposition`'s `delta` field algebraically simplifies, term-for-term, to `fSwap − fBase` — exactly what the already-fast real evaluation path computes. Confirmed numerically on a live fixture to ~13 significant figures. The three additional explanatory fields (isolated per-guest preference, mutual interaction) genuinely require the extra evaluations and cannot be derived for free.
+
+**Consumer check, established before assuming a fix design:** searched the entire codebase — no consumer of these explanatory fields exists anywhere outside their own definition and tests. Checked against STD-004 §8 (Explainability Pipeline), which settles this precisely: persisting per-move deltas is *"a debug/telemetry option, not part of the model's contract"*; the ratified explainability mechanism is an unrelated, per-guest, Phase-4-finalization computation (`decomposeGuest`/`decomposeAll`, confirmed to exist in `decompose.ts` but confirmed unwired into anneal finalization — a separate, real finding, not built in this change).
+
+**Fix:** removed the unconditional decomposition call from the N2/N6 hot path; `delta` computed via the existing fast path only; explanatory fields retained as optional, populated only behind an explicit `includeDecomposition` flag.
+
+**Verification, independently reproduced by the ICAA in full, including a full independent re-run of the four-scale sweep (not accepted on the strength of an isolated microbenchmark, which had already misled the arc once):** 200 guests improved from ~164–224s (post Extension 2/pre-Change-C) to 41–77s across independent runs — real, substantial, multiply-confirmed progress. **No scale from 200 to 2,000 guests met STD-004 §9's target after this fix.** The change's own honest diagnosis names the next, distinct, not-yet-investigated bottleneck: per-proposal cost inside the already-fast incremental machinery itself (`propose*`/`SearchState`), not enumeration or duplication.
+
+**Status:** Accepted and merged (Slice 49, commit `c4045ee`). Per DI-127, the arc is paused here at the founder's explicit direction rather than continuing into that next investigation.
+
+---
+
+**Note on logging discipline (applies to DI-129–134):** these six entries were written and filed together, after the fact, rather than one at a time as each fix was authorized and verified — a real deviation from this programme's standing rule that trade-offs are logged the moment they're made. DI-127 already recorded the arc's outcome in summary; these entries restore the individual-decision granularity the rest of the register maintains, so a future reader can find the specific evidence, proof, and verification behind each fix without depending on chat history that isn't part of the durable record.
