@@ -10,6 +10,27 @@ decision_refs: [DI-039, DI-043, DI-045, DI-046, DI-101, DI-102, DI-123, DI-125, 
 # Implementation Roadmap v1 (ARCH-003)
 Phases, not sprints; **dependency waves sequenced by autonomy maturity**, not features. Every capability knows where it is going (AMM level per GOV-006) and what must exist before it may climb (AMM-001 v1.1 evidence gates). Goals (DI-045) are the planning vocabulary throughout: each phase states what a human director can *intend* at its close.
 
+## Current Build Status
+
+**As of 21 July 2026, commit `c4045ee` (`maison-platform`) — verified by hand this session by the CTO/ICAA, cross-checking real module existence, test pass status, and scorecard output. Automation to regenerate this table (`pnpm run roadmap-status`, mirroring the existing scorecard's pattern) is authorized but not yet built — see the standing instruction at the end of this section.**
+
+| Department | Spec | Status | Evidence |
+|---|---|---|---|
+| Guest | STD-002 | ✅ Built | `modules/guest-data`, Slices 3, 11 |
+| Communications | STD-006 | ✅ Built (Phases 1–6) | `modules/communications-domain`, `modules/comms-centre`, Slices 30–35 |
+| Event-Day Runtime | STD-007 | ⏳ Phase 1 only | `modules/event-day-domain`, Slice 36 — IncidentLog/ShowControl blocked on donor material (O-1/O-2) |
+| Access | STD-011 | ⏳ Phase 1 only | `modules/access-domain`, Slice 37 |
+| Seating | STD-001/003/004 | 🟡 Built, hardened, **paused** | `modules/seating-domain`, Slices 20–29, 38–49 — DI-127; does not meet STD-004 §9 at any scale 200–2,000 |
+| Guest Experience | STD-010 | ⬜ Not started | — |
+| Reporting | STD-012 | ⬜ Not started | — |
+| Intake Perimeter | (unratified spec) | ⬜ Not started | DI-101/102/123/128 — deferral condition explicitly overridden |
+| Guest Knowledge Graph / Host Intent | STD-013 | 📄 Ratified, not built | DI-125 |
+| Decision Simulation Engine | STD-014 | 📄 Ratified, not buildable yet | DI-126 — preconditions unmet |
+
+**Legend:** ✅ built and independently verified · ⏳ partial · 🟡 built but not meeting its own standard, paused · ⬜ not started · 📄 specified/ratified, no code yet.
+
+**Standing instruction, once `pnpm run roadmap-status` exists:** regenerate this table from that tool's output on every department status change, paste verbatim, and update the "as of" line above. Until then, this table is maintained by hand by the CTO/ICAA and must be independently re-verified (not just copy-forwarded) at each update — the same discipline applied throughout this session's Seating verification work.
+
 ## Phase A — The first Executive Intelligence nervous system (reframed, DI-050)
 Objective: not "foundations" but the **constitutional substrate** — six DNA packages every service imports and nothing redefines: `constitution` (artifact IDs, versions, manifests) · `contracts` (AdvisoryEnvelope, FactSubmission, DecisionRecord, LessonSubmission — STD-008 as code) · `mkc` (confidence, provenance, evidence) · `decisions` (decision IDs, traces, authority checks) · `identity` (delegation, authority, actor model) · `observability` (request/correlation IDs, execution traces) — plus the `ai-runtime` abstraction (Models/Agents/Memory/Tools/Planning/Evaluation; every method may initially call Claude; the LLM is replaceable infrastructure). Delivery is by **vertical slices**, never bare infrastructure: Slice 1 proves the nervous system end-to-end (Objective → Advisory → Execution → Decision → Lesson → Knowledge; no UI); Slices 2–4 are Guest, Communications, Seating — each exercising every constitutional layer. The **Executive Intelligence runtime** (Objective → Planner → Mission → Execution Graph → Capability Invocation → Decision Recording → Knowledge Updates → Lessons → Re-planning) is a first-class component from the outset, even while it performs only simple orchestration. Mindset: an organism, not a microservice estate — services are organs; shared language over service boundaries; contracts over transport; observability as cognition; decision records as operational state.
 ### Phase A (original foundation list, now serving the reframed objective)
